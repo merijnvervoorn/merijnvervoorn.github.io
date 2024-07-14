@@ -131,9 +131,10 @@
 
   /* Contact */
   .contact {
+    width: 100%;
     text-align: center;
-    margin: 10%;
   }
+
   .contact-title {
     font-weight: bold;
   }
