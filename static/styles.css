@@ -110,7 +110,7 @@
   .newsletter {
     text-align: center;
     background-image: url("image/mrt-bg.jpeg");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
   }
   
