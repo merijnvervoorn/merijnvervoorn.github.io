@@ -130,6 +130,9 @@
   }
 
   /* Contact */
+  .contact {
+    text-align: center;
+  }
   .contact-title {
     font-weight: bold;
   }
