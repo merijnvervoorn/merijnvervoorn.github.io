@@ -64,6 +64,17 @@
   .fa:hover {
     color: #230C33 !important;
   }
+  
+  .card {
+    flex: 1 1 calc(25% - 40px);
+    border-radius: 15px !important;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
 
   /* Hero */
   .hero {
