@@ -101,6 +101,17 @@ html {
     margin-top: 20px !important;
   }
 
+  .hero-purple {
+    -webkit-text-stroke: 1px #B080EF;
+    transition: 0.3s;
+  }
+
+.hero-purple:hover {
+  
+  -webkit-text-stroke: 1px #B080EF;
+    color: white !important;
+  }
+
   /* Over Mij */
   .about {
     text-align: center;
