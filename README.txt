@@ -16,12 +16,12 @@ website.
                 Live Version
 ---------------------------------------------------
 You can access the live version of this project at:
-[https://merijnvervoorn.com](https://merijnvervoorn.com)
+https://merijnvervoorn.com
 
 ---------------------------------------------------
                License
 ---------------------------------------------------
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---------------------------------------------------
                 Attribution
