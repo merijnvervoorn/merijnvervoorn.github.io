@@ -10,6 +10,7 @@
 /* Styling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .body {
@@ -94,6 +95,8 @@ body, p, a, span {
   color: var(--dark-purple) !important;
   font-style: italic;
   text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .nav-link:hover {
@@ -137,6 +140,7 @@ body, p, a, span {
   color: var(--dark-blue);
   font-size: 3.5rem;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .hero-subheading {
