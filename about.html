@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Merijn Vervoorn | Over</title>
-        <link rel="stylesheet" href="/static/styles.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="icon" type="image/x-icon" href="static/logo/logo-darkblue.svg">
-    </head>
-    <body class="body animate__animated animate__backInUp">
-        <div class="topnav">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none topnav-image">
-                <img src="/static/logo/logo-darkblue.svg" class="bi me-2 topnav-image" width="50" >
-                <span class="dark-purple fs-4 topnav-text">Merijn Vervoorn</span>
-            </a>
+  <head>
+    <!-- SEO & Meta-->
+    <title>Merijn Vervoorn | Wees paars</title>
+    <link rel="icon" type="image/x-icon" href="static/logo/logo-darkblue.svg">
+    <meta name="description" content="Merijn Vervoorn is een student aan de UvA. Hij is altijd op zoek naar nieuwe dingen om te leren en deel mijn kennis graag met anderen. Hij maakt graag video's en podcasts en is ook altijd bereid om anderen te helpen.">
+    <meta name="keywords" content="Merijn, Vervoorn, Merijn Vervoorn">
+    <meta name="author" content="Merijn Vervoorn">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="/" class=" nav-link" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="about" class="nav-link nav-link-active">Over</a></li>
-                <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" class="nav-link">Nieuwsbrief</a></li>
-                <li class="nav-item"><a href="contact" class="nav-link">Contact</a></li>
-            </ul>
-            </header>
-        </div>
+    <!-- Styles -->
+    <!-- CSS --><link rel="stylesheet" href="/static/styles.css">
+    <!-- Bootstrap --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Font Awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts via Google -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Animate --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- splitting -->
+      <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+      <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+      <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  </head>
 
-        <div class="page-title container">
-            <h1 class="display-4 fw-bold text-body-emphasis text-center lh-1 dark-blue">Over Mij</h1>
-        </div>
+  <body class="body">
+    <div class="topnav">
+      <header class="header d-flex flex-wrap py-2 mb-4">
+        <a draggable="false" (dragstart)="false;" href="/" class="unselectable d-flex me-md-auto topnav-image">
+          <img draggable="false" (dragstart)="false;" src="/static/logo/logo-darkblue.svg" class="topnav-image unselectable" width="50" >
+          <span draggable="false" (dragstart)="false;" class="unselectable topnav-text">Merijn Vervoorn</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="/" class="nav-link nav-animate" data-splitting>Home</a></li>
+          <li class="nav-item"><a href="about" class="nav-link nav-link-active">Over</a></li>
+          <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" class="nav-link nav-animate" data-splitting>Nieuwsbrief</a></li>
+          <li class="nav-item"><a href="contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
+        </ul>
+      </header>
+    </div>
 
+    <div class="animate__animated animate__backInUp">
         <div class="intro container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="/static/image/introduction.jpg" class="d-block mx-lg-auto img-fluid" alt="Merijn Vervoorn" height="400" loading="lazy">
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="fw-bold text-body-emphasis lh-1 mb-3 purple">Introductie</h3>
+                    <h2 class=" introduction-title heading">Introductie</h2>
                     <p class="introduction-text">Hey! Ik ben Merijn, een ambitieuze student van computational social science. Hier help ik bedrijven met digitale en datagedreven oplossingen voor diverse maatschappelijke problemen, waarbij ik voortdurend nieuwe uitdagingen en groeimogelijkheden onderzoek. Deze passie voor nieuwe uitdagingen is ook zichtbaar in de rest van mijn leven, waarin ik graag mensen help. Daarnaast vind ik het geweldig om video's en podcasts te maken, en ik leer graag nieuwe dingen door het kijken van YouTube-filmpjes over interessante onderwerpen. Ook lees ik graag (ja ja, in een echt boek). De boeken die ik lees zijn een variatie van non-fictie (Digital minimalism, Atomic Habits) en fictie (Ready Player One, Tomorrow, and Tomorrow, and Tomorrow). In min vrije tijd loop ik ook hard.</p>
                 </div>
             </div>
@@ -49,7 +61,7 @@
                     <img src="/static/image/skills.jpg" class="d-block mx-lg-auto img-fluid" alt="Skills" height="400" loading="lazy">
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="fw-bold text-body-emphasis lh-1 mb-3 light-blue">Vaardigheden</h3>
+                    <h2 class="introduction-title2 heading">Vaardigheden</h2>
                     <p class="introduction-text">Met een talent voor creatieve probleemoplossing en projectmanagement, en het vloeiend spreken van zowel Nederlands als Engels, zijn interacties met stakeholders en klanten geen probleem. Mijn studie heeft mij ook voorzien van sterke vaardigheden op het gebied van samenwerken in teamverband en het maken van rapporten.
                         <br>
                         Mijn vaardigheid op verschillende technische velden, waaronder Adobe Design programma's, Python, HTML, CSS, LaTeX, Microsoft Office en SQL, vergroot mijn vermogen om bij te dragen aan digitale projecten, het vereenvoudigen van processen en het presenteren van complexe informatie op een toegankelijke manier.</p>
@@ -61,19 +73,19 @@
             <div class="ambition-row row g-4 py-5 row-cols-1 row-cols-lg-2">
                 <div class="feature col">
                     <span style='font-size:100px;'>&#128119;</span>
-                    <h3 class="ambition-head fs-2 text-body-emphasis">Ervaringen</h3>
+                    <h2 class="ambition-head heading">Ervaringen</h2>
                     <p class="ambition-text">Mijn passie voor multimedia wordt ook persoonlijk gebruikt in het maken van video's, nieuwsbrieven en podcasts, waarbij creatieve communicatievaardigheden worden ingezet om berichten op verschillende manieren weer te geven. Bovendien hebben mijn certificeringen van Cambridge en NIMA aangetoond dat ik een sterke basis in professionele communicatie en marketing heb.</p>
                 </div>
                 <div class="feature col">
                     <span style='font-size:100px;'>&#127919;</span>
-                    <h3 class="ambition-head fs-2 text-body-emphasis">Missie</h3>
+                    <h2 class="ambition-head heading">Missie</h2>
                     <p class="ambition-text">Ik ben gemotiveerd om mijn vaardigheden te ontwikkelen en te gebruiken om een positieve impact te hebben op mijn werk en de wereld om ons heen. Als je blijft leren en ontwikkelen kan je de wereld aan, soms met behulp van een team.</p>
                 </div>
             </div>
         </div>
 
         <div class="contact-container">
-            <h2 class="fw-bold text-center purple">Neem contact met me op</h2>
+            <h2 class="heading">Neem contact met me op</h2>
             <button type="button" class="btn btn-outline-secondary btn-lg" onclick="window.location.href='contact';">Contact</button>
         </div>
 
@@ -83,7 +95,7 @@
                     <img src="/static/image/be-purple.jpg" class="d-block mx-lg-auto img-fluid" alt="Wees paars" height="400" loading="lazy">
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="fw-bold text-body-emphasis lh-1 mb-3 dark-blue">Wees paars waar anderen blauw zijn!</h3>
+                    <h2 class="heading wees-paars-explanation">Wees paars waar anderen blauw zijn!</h2>
                     <p class="introduction-text">De slogan 'Wees paars waar anderen blauw zijn' staat voor het anders kunnen zijn dan de rest. En weet je wat grappig is? In webdesign zijn onbezochte links meestal blauw, maar als je erop klikt, worden ze paars.  Voor mij betekent dit dat je altijd nieuwe ontdekkingen aan moet gaan waardoor je altijd blijft leren.
                         <br>
                         Voor mij gaat het niet alleen om hoe de website eruitziet, maar ook om het avontuur van leren. Elk paars linkje staat voor een nieuw avontuur binnen een grotere 'Rabbithole'. Dit idee centraal in mijn nieuwsbrief 'Merijns Relatieve Tijdsaanduiding'. De slogan blijft een uitnodiging aan jullie allemaal om samen met mij op ontdekkingstocht te gaan en te genieten van het avontuur van altijd blijven leren.</p>
@@ -91,28 +103,32 @@
             </div>
         </div>
 
-        <div class="footer px-4 py-5" id="featured-3">
-            <div class="footer-row row g-4 py-5 row-cols-1 row-cols-lg-4">
-            <div class="feature col">
-                <img src="/static/logo/logo-darkblue.svg" class="bi me-2 topnav-image" width="200" >
-            </div>
-            <div class="feature col">
-                <p class="footer-head text-body-emphasis">Merijn Vervoorn</p>
+        <div class="footer">
+            <div class="footer-row row row-cols-1 row-cols-lg-4">
+              <div class="col">
+                <img draggable="false" (dragstart)="false;" src="/static/logo/logo-darkblue.svg" class="topnav-image unselectable" width="200" >
+              </div>
+              <div class="col">
+                <p class="footer-head heading">Merijn Vervoorn</p>
                 <p class="footer-text">Ik ben Merijn, een student aan de UvA. Ik ben altijd op zoek naar nieuwe dingen om te leren en deel mijn kennis graag met anderen. Ik maak graag video's en podcasts en ben ook altijd bereid om anderen te helpen.</p>
-            </div>
-            <div class="feature col">
-                <p class="footer-head text-body-emphasis">Browse</p>
+              </div>
+              <div class="col">
+                <p class="footer-head heading">Browse</p>
                 <ul class="footer-text">
-                <li><a href="/" class="footer-link">Home</a></li>
-                <li><a href="about" class="footer-link">Over</a></li>
-                <li><a href="contact" class="footer-link">Contact</a></li>
+                  <li><a href="/" class="footer-link">Home</a></li>
+                  <li><a href="about" class="footer-link">Over</a></li>
+                  <li><a href="contact" class="footer-link">Contact</a></li>
                 </ul>
-            </div>
-            <div class="feature col">
-                <p class="footer-head text-body-emphasis">Contact</p>
+              </div>
+              <div class="col">
+                <p class="footer-head heading">Contact</p>
                 <p class="footer-text">Mail: <a href="mailto:merijnvervoorn@outlook.com" class="footer-link">merijnvervoorn@outlook.com</a></p>
+              </div>
             </div>
-            </div>
-        </div>
-    </body>
-</html>
+          </div>
+       </div>
+
+       <script src="script.js"></script> 
+
+        </body>
+      </html>
