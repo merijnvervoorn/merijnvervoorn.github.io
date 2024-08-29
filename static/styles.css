@@ -80,16 +80,17 @@ body, p, a, span {
 }
 
 .topnav-text {
-    color: var(--dark-purple);
-    font-size: 1.5rem;
-    text-decoration: none;
-  }
+  color: var(--dark-blue);
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+}
 
 .topnav-image {
-    margin-right: 10px !important;
-    margin-left: 10px !important;
-    text-decoration: none;
-  }
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+  text-decoration: none;
+}
 
 .nav-link {
   color: var(--dark-purple) !important;
