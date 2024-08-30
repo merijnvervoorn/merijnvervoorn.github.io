@@ -41,9 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Create shapes at fixed positions
     const shapes = [
-        Bodies.circle(containerWidth / 4, containerHeight / 4, 70, { restitution: 0.9, render: { fillStyle: '#B080EF' } }),
-        Bodies.rectangle(containerWidth / 2, containerHeight / 2, 120, 120, { restitution: 0.9, render: { fillStyle: '#F9DB6D' } }),
-        Bodies.polygon(containerWidth * 3 / 4, containerHeight * 3 / 4, 3, 80, { restitution: 0.9, render: { fillStyle: '#709AC2' } })
+        Bodies.circle(containerWidth / 6, containerHeight / 4, 70, { restitution: 0.9, render: { fillStyle: '#B080EF' } }),
+        Bodies.rectangle(containerWidth / 9, containerHeight / 2, 120, 120, { restitution: 0.9, render: { fillStyle: '#F9DB6D' } }),
+        Bodies.polygon(containerWidth / 4, containerHeight * 3 / 4, 3, 80, { restitution: 0.9, render: { fillStyle: '#709AC2' } })
+
     ];
     World.add(world, shapes);
 
