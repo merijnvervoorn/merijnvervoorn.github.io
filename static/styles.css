@@ -139,7 +139,7 @@ body, p, a, span {
   background-color: var(--white);
   width: 100vw;
   height: 90vh;
-  overflow: auto;
+  overflow: show;
 }
 
 .hero-heading {
@@ -194,6 +194,10 @@ body, p, a, span {
   .hero-yellow {
     font-size: 1.5rem;
   }
+
+  .mobile-hide {
+    display: none;
+  }
 }
 
 .hero-interactive {
@@ -220,10 +224,9 @@ body, p, a, span {
   left: 0;
   width: 100vw;
   height: 90vh;
-  overflow: hidden;
+  overflow: show;
   outline: none;
 }
-
 
 
 /* Over Mij */
