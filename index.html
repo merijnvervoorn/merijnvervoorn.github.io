@@ -23,6 +23,8 @@
       <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
       <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
       <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
   </head>
 
   <body class="body">
@@ -45,20 +47,23 @@
   <div class="animate__animated animate__backInUp">
 
     <div class="hero">
+      <div id="canvas-container"></div>
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img img draggable="false" (dragstart)="false;" src="/static/image/hero.jpg" class="d-block mx-lg-auto img-fluid unselectable" alt="Merijn Vervoorn" width="700" height="500" loading="lazy">
           </div>
-          <div class="col-lg-6">
-            <span class="hero-subheading heading">Ik Creeër </span> <span class="heading hero-purple">Digitale Innovaties </span> <span class="hero-subheading heading">tegen Sociale Problemen</span>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="hero-button btn btn-outline-secondary btn-lg" onclick="window.location.href='contact';">Stuur me een bericht!</button>
+          <div class="col-lg-6 hero-interactive">
+            <span class="heading hero-subheading">Ik Creeër </span> <span class="heading hero-purple">Digitale Oplossingen </span> <span class="heading hero-subheading">Voor </span><span class="heading hero-yellow">Sociale Problemen</span>
+            <div class="d-grid gap-2 d-md-flex">
+              <br>
+              <button type="button" class="hero-interactiven btn btn-outline-secondary btn-lg" onclick="window.location.href='contact';">Stuur me een bericht!</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+  
 
     <div class="about px-4 py-5" id="featured-3">
       <h1 class="about-title heading">Over mij</h1>
@@ -160,7 +165,6 @@
       </div>
     </div>
   </div>
-
     <script src="script.js"></script> 
 
   </body>

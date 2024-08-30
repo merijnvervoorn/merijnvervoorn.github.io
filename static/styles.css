@@ -66,6 +66,7 @@ body, p, a, span {
   -ms-user-select: none;
   }
 
+
 /* Topnav */
 .topnav {
     overflow: hidden;
@@ -135,6 +136,8 @@ body, p, a, span {
 .hero {
   margin-top: 3rem;
   background-color: var(--white);
+  width: 100vw;
+  height: 100vh;
 }
 
 .hero-heading {
@@ -145,12 +148,14 @@ body, p, a, span {
 }
 
 .hero-subheading {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.32);
   color: var(--light-blue);
   font-size: 2.5rem;
 }
 
 .hero-purple {
   color: var(--purple);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.32);
   font-size: 2.5rem;
   -webkit-text-stroke: 1px var(--purple);
   transition: 0.3s;
@@ -158,7 +163,20 @@ body, p, a, span {
 
 .hero-purple:hover {
   -webkit-text-stroke: 1px var(--purple);
-  color: var(--white) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.hero-yellow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.32);
+  color: var(--yellow);
+  font-size: 2.5rem;
+  -webkit-text-stroke: 1px var(--yellow);
+  transition: 0.3s;
+}
+
+.hero-yellow:hover {
+  -webkit-text-stroke: 1px var(--yellow);
+  color: rgb(255, 255, 255) !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -173,14 +191,19 @@ body, p, a, span {
   .hero-purple {
     font-size: 1.5rem;
   }
+
+  .hero-yellow {
+    font-size: 1.5rem;
+  }
 }
 
-.hero-button {
-  margin-top: 20px !important;
+.hero-interactive {
+  z-index: 20;
 }
 
 .btn-outline-secondary, .btn-outline-secondary:visited {
   color: var(--dark-purple) !important;
+  background-color: rgba(255, 255, 255, 0.453) !important;
   border-color: var(--dark-blue) !important;
   font-weight: normal !important;
   border-width: 2px !important;
@@ -191,6 +214,16 @@ body, p, a, span {
   color: var(--white) !important;
   border-color: #edf8ff !important;
 }
+
+#canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 /* Over Mij */
 .about {
