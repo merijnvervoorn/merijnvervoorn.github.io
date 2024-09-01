@@ -178,28 +178,6 @@ body, p, a, span {
   color: rgb(255, 255, 255) !important;
 }
 
-@media screen and (max-width: 768px) {
-  .hero-heading {
-    font-size: 2.5rem;
-  }
-
-  .hero-subheading {
-    font-size: 1.5rem;
-  }
-
-  .hero-purple {
-    font-size: 1.5rem;
-  }
-
-  .hero-yellow {
-    font-size: 1.5rem;
-  }
-
-  .mobile-hide {
-    display: none;
-  }
-}
-
 .hero-interactive {
   z-index: 20;
 }
@@ -413,4 +391,35 @@ body, p, a, span {
 
 .footer-link:hover {
   color: var(--dark-purple);
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-subheading {
+    font-size: 1.5rem;
+  }
+
+  .hero-purple {
+    font-size: 1.5rem;
+  }
+
+  .hero-yellow {
+    font-size: 1.5rem;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .center-img {
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }

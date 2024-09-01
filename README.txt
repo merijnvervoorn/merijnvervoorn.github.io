@@ -2,7 +2,7 @@
                 Merijnvervoorn.com
 ===================================================
 
-Version: 2.3.3
+Version: 2.3.4
 License: MIT
 Build Status: Passing
 

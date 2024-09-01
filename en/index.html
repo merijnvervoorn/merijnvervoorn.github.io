@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
   <head>
     <!-- SEO & Meta-->
     <title>Merijn Vervoorn</title>
     <link rel="icon" type="image/x-icon" href="static/logo/logo-darkblue.svg">
-    <meta name="description" content="Merijn Vervoorn is een student aan de UvA. Hij is altijd op zoek naar nieuwe dingen om te leren en deelt zijn kennis graag met anderen. Hij maakt graag video's en podcasts en is ook altijd bereid om anderen te helpen.">
+    <meta name="description" content="Merijn Vervoorn is a student at the UvA. He is always looking for new things to learn and likes to share his knowledge with others. He enjoys making videos and podcasts and is always willing to help others.">
     <meta name="keywords" content="Merijn, Vervoorn, Merijn Vervoorn">
     <meta name="author" content="Merijn Vervoorn">
     <meta charset="utf-8">
@@ -36,11 +36,11 @@
         </a>
   
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="/" class="nav-link nav-link-active">Home</a></li>
-          <li class="nav-item"><a href="about" class="nav-link nav-animate" data-splitting>Over</a></li>
-          <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" class="nav-link nav-animate" data-splitting>Nieuwsbrief</a></li>
-          <li class="nav-item"><a href="contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
-          <li class="nav-item"><a draggable="false" (dragstart)="false;" href="en/index" class="fa-solid fa-language unselectable" data-splitting></a></li>
+          <li class="nav-item"><a href="en/index" class="nav-link nav-link-active">Home</a></li>
+          <li class="nav-item"><a href="en/about" class="nav-link nav-animate" data-splitting>About</a></li>
+          <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" class="nav-link nav-animate" data-splitting>Newsletter</a></li>
+          <li class="nav-item"><a href="en/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
+          <li class="nav-item"><a draggable="false" (dragstart)="false;" href="/" class="nav-link fa-solid fa-language unselectable" data-splitting></a></li>
         </ul>
       </header>
     </div>
@@ -55,10 +55,10 @@
             <img img draggable="false" (dragstart)="false;" src="/static/image/hero.jpg" class="d-block mx-lg-auto img-fluid unselectable hero-img center-img" alt="Merijn Vervoorn" width="700" height="500" loading="lazy">
           </div>
           <div class="col-lg-6 hero-interactive">
-            <span class="heading hero-subheading">Ik Creeër </span> <span class="heading hero-purple">Digitale Oplossingen </span> <span class="heading hero-subheading">Voor </span><span class="heading hero-yellow">Sociale Problemen</span>
+            <span class="heading hero-subheading">I Create </span> <span class="heading hero-purple">Digital Solutions </span> <span class="heading hero-subheading">For </span><span class="heading hero-yellow">Social Problems</span>
             <div class="d-grid gap-2 d-md-flex">
               <br>
-              <button type="button" class="hero-interactive btn btn-outline-secondary btn-lg" onclick="window.location.href='contact';">Stuur me een bericht!</button>
+              <button type="button" class="hero-interactive btn btn-outline-secondary btn-lg" onclick="window.location.href='en/contact';">Send me a message!</button>
             </div>
           </div>
         </div>
@@ -67,25 +67,25 @@
   
 
     <div class="about px-4 py-5" id="featured-3">
-      <h1 class="about-title heading">Over mij</h1>
+      <h1 class="about-title heading">About me</h1>
       <div class="about-row row justify-content-center g-4 py-5 row-cols-1 row-cols-lg-5">
         <div class="feature col card">
-          <img draggable="false" (dragstart)="false;" src="/static/shape/po-tri.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Wie ben ik?" width="200" height="200" loading="lazy">
-          <h2 class="about-head subheading">Wie ben ik?</h2>
-          <p class="about-text">Ik studeer Computational Social Science aan de Universiteit van Amsterdam. Naast wat ik hier leer, heb ik ook werkervaring als hulpkracht op een dierenafdeling, als volleybaltrainer en als fietskoerier bij Coolblue.</p>
+          <img draggable="false" (dragstart)="false;" src="/static/shape/po-tri.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Who am I?" width="200" height="200" loading="lazy">
+          <h2 class="about-head subheading">Who am I?</h2>
+          <p class="about-text">I study Computational Social Science at the University of Amsterdam. In addition to what I learn here, I also have work experience as a sales force at a pet store, as a volleyball trainer and as a bicycle courier at Coolblue.</p>
         </div>
         <div class="feature col card">
-          <img draggable="false" (dragstart)="false;" src="/static/shape/bl-sq.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Vrije tijd" width="200" height="200" loading="lazy">
-          <h2 class="about-head subheading" style="color: var(--light-blue);">Vrije tijd</h2>
-          <p class="about-text">Naast mijn professionele leven ben ik geïnteresseerd in multimedia zoals video's (op YouTube of Netflix), websites en podcasts. En een kruiswoordpuzzel of sudoku krijgt mij altijd aan het denken. Ook houd ik ervan om mijn brein te legen tijdens het hardlopen.</p>
+          <img draggable="false" (dragstart)="false;" src="/static/shape/bl-sq.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Spare time" width="200" height="200" loading="lazy">
+          <h2 class="about-head subheading" style="color: var(--light-blue);">Spare time</h2>
+          <p class="about-text">Besides my professional life I am interested in multimedia like videos (on YouTube or Netflix), websites and podcasts. And a crossword puzzle or sudoku always gets me thinking. I also like to empty my brain while running.</p>
         </div>
         <div class="feature col card">
-          <img draggable="false" (dragstart)="false;" src="/static/shape/yc-cir.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Mijn missie" width="200" height="200" loading="lazy">
-          <h2 class="about-head subheading" style="color: var(--yellow);">Mijn missie</h2>
-          <p class="about-text">Ik zet mijn vaardigheden graag in om mensen te helpen en om een positieve impact te hebben op mijn werk en de mensen om me heen. Ik word blij van het ontwikkelen van mijn vaardigheden en probeer altijd mezelf te blijven.</p>
+          <img draggable="false" (dragstart)="false;" src="/static/shape/yc-cir.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="My mission" width="200" height="200" loading="lazy">
+          <h2 class="about-head subheading" style="color: var(--yellow);">My mission</h2>
+          <p class="about-text">I like to use my skills to help people and have a positive impact on my work and the people around me. I enjoy developing my skills and always try to remain myself.</p>
         </div>
       </div>
-      <button type="button" class="btn btn-outline-secondary btn-lg" onclick="window.location.href='about';">Meer over mij</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg" onclick="window.location.href='en/about';">More about me</button>
     </div>
     
 
@@ -97,15 +97,15 @@
               <div class="newsletter-logo me-3">
                 <img draggable="false" (dragstart)="false;" src="/static/logo/logo-mrt.png" class="unselectable d-block mx-lg-auto img-fluid" alt="Merijns Relatieve Tijdsaanduiding" width="100" height="100" loading="lazy">
               </div>
-              <span class="newsletter-title">Merijns Relatieve Tijdsaanduiding</span>
+              <span class="newsletter-title">Merijns Relative Time-indication</span>
               <div class="newsletter-logo ms-3">
                 <img draggable="false" (dragstart)="false;" src="/static/logo/logo-mrt-mirrored.png" class="unselectable d-block mx-lg-auto img-fluid" alt="Merijns Relatieve Tijdsaanduiding" width="100" height="100" loading="lazy">
               </div>
             </div>
-            <p class="newsletter-text">Via mijn nieuwsbrief 'Merijns Relatieve Tijdsaanduiding' ontvang je regelmatig updates over wat er in mijn hoofd is blijven hangen. Ik deel mijn inzichten en gedachten en vertel je wat ik heb geleerd.
-              De frequentie van de nieuwsbrief kan variëren, afhankelijk van mijn beschikbare tijd en inspiratie (en uitstelgedrag😉). Maar je kunt erop rekenen dat elke nieuwsbrief waardevolle en interessante informatie bevat.
+            <p class="newsletter-text">Through my Dutch newsletter 'Merijns Relatieve Tijdstekening' you will receive regular updates on what has stuck in my head. I share my insights and thoughts and tell you what I have learned.
+              The frequency of the newsletter may vary, depending on my available time and inspiration (and procrastination 😉). But you can count on each newsletter containing valuable and interesting information.
               
-              Schrijf je nu in en blijf op de hoogte van mijn laatste inzichten en gedachten!</p>
+              Subscribe now and stay up to date with my latest insights and thoughts!</p>
           </div>
           <div class="newsletter-form col-lg-6">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftBpqaIxGdpnMZ0mx9taa218LQPuxUauPyDUt49MzoTOZTpg/viewform?embedded=true" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -120,10 +120,10 @@
           <div class="col-lg-6 justify-content-center">
             <div>
             <div>
-            <h1 class="contact-title heading">Neem contact met me op</h1>
+            <h1 class="contact-title heading">Contact me</h1>
             </div>
             <div>
-            <p>Wil je me een vraag stellen, een opmerking maken, een verhaal vertellen of gewoon gegevens uitwisselen? Stuur me een bericht via dit contactformulier. Of verbind met me via mijn sociale media accounts (Instagram gebruik ik niet).</p>
+            <p>Want to ask me a question, make a comment, tell me a story or just exchange information? Send me a message using this contact form. Or connect with me via my social media accounts (I don't use Instagram).</p>
             <div>
               <a draggable="false" (dragstart)="false;" href="https://www.linkedin.com/in/merijnvervoorn/" target="_blank" class="fa fa-linkedin unselectable"></a>
               <a draggable="false" (dragstart)="false;" href="https://www.youtube.com/@merijnvervoorn" target="_blank" class="fa fa-youtube unselectable"></a>
@@ -149,14 +149,14 @@
         </div>
         <div class="col">
           <p class="footer-head heading">Merijn Vervoorn</p>
-          <p class="footer-text">Ik ben Merijn, een student aan de UvA. Ik ben altijd op zoek naar nieuwe dingen om te leren en deel mijn kennis graag met anderen. Ik maak graag video's en podcasts en ben ook altijd bereid om anderen te helpen.</p>
+          <p class="footer-text">I am Merijn, a student at the UvA. I am always looking for new things to learn and love to share my knowledge with others. I enjoy making videos and podcasts and am always willing to help others.</p>
         </div>
         <div class="col">
           <p class="footer-head heading">Browse</p>
           <ul class="footer-text">
-            <li><a href="/" class="footer-link">Home</a></li>
-            <li><a href="about" class="footer-link">Over</a></li>
-            <li><a href="contact" class="footer-link">Contact</a></li>
+            <li><a href="en/index" class="footer-link">Home</a></li>
+            <li><a href="en/about" class="footer-link">About</a></li>
+            <li><a href="en/contact" class="footer-link">Contact</a></li>
           </ul>
         </div>
         <div class="col">
