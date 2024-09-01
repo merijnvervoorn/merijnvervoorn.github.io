@@ -48,7 +48,6 @@ body, p, a, span {
 /* Icons */
 .fa {
   color: var(--dark-blue) !important;
-  font-size: 3em !important;
   padding: 10px;
   text-decoration: none !important;
 }
