@@ -15,7 +15,7 @@ the code of my personal website.
 ---------------------------------------------------
                 Live Version
 ---------------------------------------------------
-You can access the live version of this project at:
+You can access the live version of this website at:
 https://merijnvervoorn.com
 
 ---------------------------------------------------
