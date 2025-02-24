@@ -209,8 +209,15 @@ p {
   transition: 0.5s;
 }
 
+.fa-language {
+  color: var(--primary) !important;
+  padding: 10px;
+  text-decoration: none !important;
+  transition: 0.5s;
+}
+
 .fa:hover {
-  color: var(--glossary-violet) !important;
+  color: var(--secondary) !important;
   transform: translate(0, -3px);
 }
 
@@ -223,6 +230,58 @@ p {
   -ms-user-select: none;
   }
 
+/* Buttons */
+.primary-button {
+  text-decoration: none;
+  padding: 0.5em 2em;
+  background-color: var(--primary);
+  color: var(--bg);
+  border-radius: var(--border05);
+  transition: transform ease 0.2s, box-shadow ease 0.2s, background-color ease 0.2s;
+  display: inline-block;
+  font-size: var(--p);
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.primary-button:hover {
+  color: var(--bg);
+  background-color: var(--primary75);
+  transform: translate(0, -3px);
+}
+
+
+.secondary-button {
+  padding: 0.5em 2em;
+  background-color: var(--secondary30);
+  color: var(--text);
+  border-radius: var(--border05);
+  display: inline-block;
+  font-size: var(--p);
+  z-index: 1;
+  cursor: pointer;
+  transition: transform ease 0.2s;
+  white-space: nowrap;
+}
+
+.secondary-button:hover {
+  transform: translate(0, -3px);
+  transition: transform ease 0.2s;
+}
+
+.btn-outline-secondary, .btn-outline-secondary:visited {
+  color: var(--secondary) !important;
+  background-color: rgba(255, 255, 255, 0.453) !important;
+  border-color: var(--secondary) !important;
+  font-weight: normal !important;
+  border-width: 2px !important;
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:active {
+  background-color: var(--secondary) !important;
+  color: var(--minimal-white) !important;
+  border-color: #edf8ff !important;
+}
 
 /* Topnav */
 .topnav {
@@ -344,20 +403,6 @@ p {
 
 .hero-interactive {
   z-index: 20;
-}
-
-.btn-outline-secondary, .btn-outline-secondary:visited {
-  color: var(--secondary) !important;
-  background-color: rgba(255, 255, 255, 0.453) !important;
-  border-color: var(--secondary) !important;
-  font-weight: normal !important;
-  border-width: 2px !important;
-}
-
-.btn-outline-secondary:hover, .btn-outline-secondary:active {
-  background-color: var(--secondary) !important;
-  color: var(--minimal-white) !important;
-  border-color: #edf8ff !important;
 }
 
 #canvas-container {
@@ -505,6 +550,9 @@ p {
 .contact-form img {
   flex-shrink: 0;
 }
+
+/* Projects */
+
 
 /* Footer */
 .footer {
