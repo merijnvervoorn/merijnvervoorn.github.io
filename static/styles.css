@@ -11,6 +11,25 @@
   --secondary: #2d284d; /* Glossary Violet */
   --accent: #f28907; /* Anaerobic Orange */
  
+  --bg5: hsla(0, 0%, 100%, 5%);
+  --bg10: hsla(0, 0%, 100%, 10%);
+  --bg15: hsla(0, 0%, 100%, 15%);
+  --bg20: hsla(0, 0%, 100%, 20%);
+  --bg25: hsla(0, 0%, 100%, 25%);
+  --bg30: hsla(0, 0%, 100%, 30%);
+  --bg35: hsla(0, 0%, 100%, 35%);
+  --bg40: hsla(0, 0%, 100%, 40%);
+  --bg45: hsla(0, 0%, 100%, 45%);
+  --bg50: hsla(0, 0%, 100%, 50%);
+  --bg55: hsla(0, 0%, 100%, 55%);
+  --bg60: hsla(0, 0%, 100%, 60%);
+  --bg65: hsla(0, 0%, 100%, 65%);
+  --bg70: hsla(0, 0%, 100%, 70%);
+  --bg75: hsla(0, 0%, 100%, 75%);
+  --bg80: hsla(0, 0%, 100%, 80%);
+  --bg85: hsla(0, 0%, 100%, 85%);
+  --bg90: hsla(0, 0%, 100%, 90%);
+  --bg95: hsla(0, 0%, 100%, 95%);
   --text5: hsl(246, 76%, 5%, 5%);
   --text10: hsl(246, 76%, 5%, 10%);
   --text15: hsl(246, 76%, 5%, 15%);
@@ -237,7 +256,8 @@ p {
   background-color: var(--primary);
   color: var(--bg);
   border-radius: var(--border05);
-  transition: transform ease 0.2s, box-shadow ease 0.2s, background-color ease 0.2s;
+  border: none;
+  transition: transform ease 0.2s, background-color ease 0.2s;
   display: inline-block;
   font-size: var(--p);
   z-index: 2;
@@ -253,34 +273,44 @@ p {
 
 .secondary-button {
   padding: 0.5em 2em;
-  background-color: var(--secondary30);
-  color: var(--text);
+  background-color: var(--secondary);
+  color: var(--bg);
   border-radius: var(--border05);
+  border: none;
   display: inline-block;
   font-size: var(--p);
   z-index: 1;
   cursor: pointer;
-  transition: transform ease 0.2s;
+  transition: transform ease 0.2s, background-color ease 0.2s;
   white-space: nowrap;
 }
 
 .secondary-button:hover {
+  background-color: var(--secondary75);
   transform: translate(0, -3px);
   transition: transform ease 0.2s;
 }
 
-.btn-outline-secondary, .btn-outline-secondary:visited {
-  color: var(--secondary) !important;
-  background-color: rgba(255, 255, 255, 0.453) !important;
-  border-color: var(--secondary) !important;
-  font-weight: normal !important;
-  border-width: 2px !important;
+.secondary-outline-button, .secondary-outline-button:visited {
+  padding: 0.5em 2em;
+  background-color: var(--bg45);
+  color: var(--secondary);
+  border-radius: var(--border05);
+  border-color: var(--secondary);
+  border-width: 2px;
+  display: inline-block;
+  font-size: var(--p);
+  z-index: 1;
+  cursor: pointer;
+  transition: transform ease 0.2s, background-color ease 0.2s;
+  white-space: nowrap;
 }
 
-.btn-outline-secondary:hover, .btn-outline-secondary:active {
-  background-color: var(--secondary) !important;
-  color: var(--minimal-white) !important;
-  border-color: #edf8ff !important;
+.secondary-outline-button:hover {
+  background-color: var(--secondary);
+  color: var(--bg);
+  transform: translate(0, -3px);
+  transition: transform ease 0.2s;
 }
 
 /* Topnav */
@@ -354,7 +384,7 @@ p {
   margin-top: 3rem;
   background-color: var(--minimal-white);
   width: 100vw;
-  height: 90vh;
+  height: 95vh;
   overflow: show;
 }
 
@@ -410,8 +440,8 @@ p {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 90vh;
-  overflow: show;
+  height: 95vh;
+  overflow: hidden;
   outline: none;
 }
 
@@ -419,6 +449,7 @@ p {
 /* Over Mij */
 .about {
   text-align: center;
+  background-image: linear-gradient(to right top, var(--text5), var(--accent5));
 }
 
 .about-text {
@@ -430,7 +461,7 @@ p {
   border-radius: 20px !important;
   margin: 1rem;
   text-align: center;
-  background-color: var(--primary5) !important;
+  background-color: var(--primary10) !important;
   padding: 1rem;
   border-style: hidden !important;
 }
