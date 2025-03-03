@@ -5,7 +5,7 @@
     <title>Merijn Vervoorn</title>
     <link rel="icon" type="image/x-icon" href="static/logo/favi.png">
     <meta name="description" content="Merijn Vervoorn is een student aan de UvA. Hij is altijd op zoek naar nieuwe dingen om te leren en deelt zijn kennis graag met anderen. Hij maakt graag video's en podcasts en is ook altijd bereid om anderen te helpen.">
-    <meta name="keywords" content="Merijn, Vervoorn, Merijn Vervoorn">
+    <meta name="keywords" content="Merijn, Vervoorn, Merijn Vervoorn, Zoeterwoude, Leiden, Python, website, Computational Social Science, Data en Sociale wetenschappen, UvA, Universiteit van Amsterdam, Digitale oplossing voor sociale problemen">
     <meta name="author" content="Merijn Vervoorn">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,11 +51,13 @@
       <div class="mobile-hide" id="canvas-container" tabindex="-1"></div>
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img img draggable="false" (dragstart)="false;" src="/static/image/hero.jpg" class="d-block mx-lg-auto img-fluid unselectable hero-img center-img" alt="Merijn Vervoorn" width="700" height="500" loading="lazy">
+          <div class="parent col-10 col-sm-8 col-lg-6">
+            <img img draggable="false" (dragstart)="false;" src="/static/image/hero-bg.jpg" class="d-block mx-lg-auto img-fluid unselectable center-img hero-hidden" alt="Merijn Vervoorn" width="700" loading="lazy">
+            <img img draggable="false" (dragstart)="false;" src="/static/image/hero.jpg" class="d-block mx-lg-auto img-fluid unselectable hero-img center-img" alt="Merijn Vervoorn" width="700" loading="lazy">
+            
           </div>
           <div class="col-lg-6 hero-interactive">
-            <span class="hero-subheading">Ik Creeër </span> <a class="hero-purple" href="https://merijnvervoorn.com/projects">Digitale Oplossingen </a> <span class="hero-subheading">Voor </span><a class="hero-yellow" href="https://www.youtube.com/watch?v=EuP_IU-5tZo">Sociale Problemen</a>
+            <span class="hero-subheading">Ik Creeër </span> <a class="hero-purple" href="projects">Digitale Oplossingen </a> <span class="hero-subheading">Voor </span><a class="hero-yellow" href="https://www.youtube.com/watch?v=EuP_IU-5tZo">Sociale Problemen</a>
             <div class="d-grid gap-2 d-md-flex">
               <br>
               <button type="button" class="hero-interactive secondary-outline-button" onclick="window.location.href='contact';">Stuur me een bericht!</button>
@@ -70,19 +72,19 @@
       <h2 class="about-title">Over Mij</h2>
       <div class="about-row row justify-content-center g-4 py-5 row-cols-1 row-cols-lg-4">
         <div class="feature col card">
-          <img draggable="false" (dragstart)="false;" src="/static/shape/po-tri.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Wie ben ik?" width="150" height="150" loading="lazy">
-          <h3 class="about-head">Wie ben ik?</h3>
-          <p class="about-text">Ik studeer Computational Social Science aan de Universiteit van Amsterdam. Naast wat ik hier leer, heb ik ook werkervaring als fietskoerier bij Coolblue, als volleybaltrainer en als hulpkracht op een dierenafdeling.</p>
+          <img draggable="false" (dragstart)="false;" src="/static/shape/po-tri.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Wie ben ik?" width="75" height="75" loading="lazy">
+          <h3 class="about-head">Mijn studie</h3>
+          <p class="about-text">Ik studeer Computational Social Science aan de Universiteit van Amsterdam. Hier pas ik Data Science toe op maatschappelijke vraagstukken.</p>
         </div>
         <div class="feature col card">
-          <img draggable="false" (dragstart)="false;" src="/static/shape/bl-sq.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Vrije tijd" width="150" height="150" loading="lazy">
+          <img draggable="false" (dragstart)="false;" src="/static/shape/bl-sq.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Vrije tijd" width="75" height="75" loading="lazy">
           <h3 class="about-head">Vrije tijd</h3>
-          <p class="about-text">Naast mijn professionele leven ben ik geïnteresseerd in multimedia zoals video's (op YouTube of Netflix), websites en podcasts. En een kruiswoordpuzzel of sudoku krijgt mij altijd aan het denken. Ook houd ik ervan om mijn brein te legen tijdens het hardlopen.</p>
+          <p class="about-text">Ik houd mij verder bezig met het lezen van boeken, het kijken van YouTube video's en hardlopen.</p>
         </div>
         <div class="feature col card">
-          <img draggable="false" (dragstart)="false;" src="/static/shape/yc-cir.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Mijn missie" width="150" height="150" loading="lazy">
+          <img draggable="false" (dragstart)="false;" src="/static/shape/yc-cir.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Mijn missie" width="75" height="75" loading="lazy">
           <h3 class="about-head">Mijn missie</h3>
-          <p class="about-text">Ik zet mijn vaardigheden graag in om mensen te helpen en om een positieve impact te hebben op mijn werk en de mensen om me heen. Ik word blij van het ontwikkelen van mijn vaardigheden en probeer altijd mezelf te blijven.</p>
+          <p class="about-text">Ik zet mijn vaardigheden in om mensen te helpen en om een positieve impact te hebben op de mensen om me heen.</p>
         </div>
       </div>
       <button type="button" class="secondary-button" onclick="window.location.href='about';">Meer over mij</button>
@@ -123,11 +125,10 @@
             <h2 class="contact-title">Neem contact met me op</h2>
             </div>
             <div>
-            <p>Wil je me een vraag stellen, een opmerking maken, een verhaal vertellen of gewoon gegevens uitwisselen? Stuur me een bericht via dit contactformulier. Of verbind met me via mijn sociale media accounts (Instagram gebruik ik niet).</p>
+            <p>Wil je me een vraag stellen, een opmerking maken, een verhaal vertellen of gewoon gegevens uitwisselen? Stuur me een bericht via dit contactformulier (of gebruik het emailadres).</p>
             <div>
               <a draggable="false" (dragstart)="false;" href="https://www.linkedin.com/in/merijnvervoorn/" target="_blank" class="fa fa-linkedin unselectable" style="font-size: 3rem;"></a>
               <a draggable="false" (dragstart)="false;" href="https://www.youtube.com/@merijnvervoorn" target="_blank" class="fa fa-youtube unselectable" style="font-size: 3rem;"></a>
-              <a draggable="false" (dragstart)="false;" href="https://www.instagram.com/muhrijn/" target="_blank" class="fa fa-instagram unselectable" style="font-size: 3rem;"></a>
               <a draggable="false" (dragstart)="false;" href="https://github.com/merijnvervoorn" target="_blank" class="fa fa-github unselectable" style="font-size: 3rem;"></a>
             </div>
             </div>

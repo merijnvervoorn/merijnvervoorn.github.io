@@ -445,6 +445,29 @@ p {
   outline: none;
 }
 
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.hero-hidden {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.hero-img {
+  transform: scale(0.9);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: 0.75s;
+}
+
+.hero-img:hover {
+  transform: rotate(25deg) scale(0.59);  
+}
 
 /* Over Mij */
 .about {
