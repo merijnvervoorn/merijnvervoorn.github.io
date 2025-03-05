@@ -472,19 +472,19 @@ p {
 /* Over Mij */
 .about {
   text-align: center;
-  background-image: linear-gradient(to right top, var(--text5), var(--accent5));
+
 }
 
 .about-text {
-  padding-top: 20px;
+  padding: 10px 25px 0 25px;
 }
 
 .card {
   flex: 1 1 calc(25% - 40px);
   border-radius: 20px !important;
-  margin: 1rem;
+  margin: 0.5rem;
   text-align: center;
-  background-color: var(--primary10) !important;
+  background-color: var(--primary5) !important;
   padding: 1rem;
   border-style: hidden !important;
 }
