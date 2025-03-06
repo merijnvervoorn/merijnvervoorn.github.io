@@ -2,7 +2,7 @@
                 Merijnvervoorn.com
 ===================================================
 
-Version: 3.0.2
+Version: 3.1.0
 License: MIT
 Build Status: Passing
 
