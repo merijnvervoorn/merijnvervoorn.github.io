@@ -473,6 +473,10 @@ p {
   text-align: center;
 }
 
+.about-title {
+  text-align: center;
+}
+
 .about-text {
   padding: 10px 25px 0 25px;
 }
