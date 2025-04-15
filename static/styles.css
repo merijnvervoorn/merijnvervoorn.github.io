@@ -234,6 +234,13 @@ p {
   transition: 0.5s;
 }
 
+.fa-footer {
+  color: var(--primary) !important;
+  padding: 10px;
+  text-decoration: none !important;
+  transition: 0.5s;
+}
+
 .fa:hover {
   color: var(--secondary) !important;
   transform: translate(0, -3px);

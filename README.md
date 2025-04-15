@@ -1,6 +1,6 @@
 # 🌐 Merijnvervoorn.com
 
-**Version:** 3.1.1  
+**Version:** 3.2.0
 **License:** MIT  
 
 Merijnvervoorn.com is my personal website, where I host and share my projects, insights, and ideas. The site is built using HTML, CSS, and JavaScript and is hosted on GitHub Pages.
