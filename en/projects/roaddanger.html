@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <!-- SEO & Meta-->
+    <title>Projects - Merijn Vervoorn</title>
+    <link rel="icon" type="image/x-icon" href="/static/logo/favi.png">
+    <meta name="description" content="Merijn Vervoorn is a student at the UvA. He is always looking for new things to learn and likes to share his knowledge with others. He enjoys making videos and podcasts and is always willing to help others.">
+    <meta name="keywords" content="Merijn, Vervoorn, Merijn Vervoorn">
+    <meta name="author" content="Merijn Vervoorn">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Styles -->
+    <!-- CSS --><link rel="stylesheet" href="/static/styles.css">
+    <!-- Bootstrap --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Font Awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts via Google -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.g/static.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Animate --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- splitting -->
+      <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+      <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+      <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+
+      <style>
+        :root {
+          --project-color: 219, 67, 67;
+        }
+
+        .hero-outline {
+          color: rgba(var(--project-color), 0.15); /* add 15 to the end for 15% opacity */
+          font-size: var(--h25);
+          font-weight: 900;
+          font-family: "unbounded", sans-serif;
+          line-height: 1.5;
+          -webkit-text-stroke: 1px rgba(var(--project-color));
+          text-decoration-line: underline;
+          text-decoration-thickness: 0rem;
+          transition: 0.5s;
+        }
+
+        .hero-outline:hover {
+          -webkit-text-stroke: 1px rgba(var(--project-color));
+          color: rgba(var(--project-color));
+          text-decoration-thickness: 0.4rem;
+        }
+
+        .project {
+          text-align: left;
+          padding: 10%;
+          background-color: rgba(var(--project-color), 0.15); /* add 15 to the end for 15% opacity */
+        }
+
+        .project-explain {
+          max-width: 1000px;
+          line-height: 1.5;
+          font-size: var(h3);
+          font-weight: 550;
+          color: #585858;
+        }
+
+        .tech-pill {
+          background: rgba(var(--project-color), 0.25); /* add 25 to the end for 15% opacity */
+          color: #000;
+          padding: 0.25rem 0.75rem;
+          border-radius: 999px;
+          font-size: 0.875rem;
+          transition: all 0.3s ease;
+          display: inline-block;
+        }
+
+        .project-button {
+          margin-top: 25px;
+          background: rgba(var(--project-color), 0.25); /* add 25 to the end for 15% opacity */
+          color: #000;
+          border: 1px solid rgba(var(--project-color));
+          padding: 0.5rem 1.25rem;
+          border-radius: 999px;
+          font-size: 0.875rem;
+          transition: all 0.3s ease;
+          display: inline-block;
+        }
+
+        .project-button:hover {
+          background: rgba(var(--project-color), 0.50); /* add 50 to the end for 50% opacity */
+          transform: translateY(-2px);
+          box-shadow: 0 2px 8px rgba(var(--project-color), 0.50); /* add 50 to the end for 50% opacity */
+        }
+
+        .secondary-project-button {
+          margin-top: 25px;
+          background: rgba(var(--project-color), 0.05); /* add 25 to the end for 15% opacity */
+          border: 1px solid rgba(var(--project-color), 0.75); /* add 50 to the end for 15% opacity */
+          color: #fff;
+          padding: 0.5rem 1.25rem;
+          border-radius: 999px;
+          font-size: 0.875rem;
+          transition: all 0.3s ease;
+          display: inline-block;
+          -webkit-filter: invert(100%);
+          filter: invert(100%);
+        }
+
+        .secondary-project-button:hover {
+          color: #fff;
+          background: rgba(var(--project-color), 0.50); /* add 50 to the end for 50% opacity */
+          transform: translateY(-2px);
+          box-shadow: 0 2px 8px rgba(var(--project-color), 0.50); /* add 50 to the end for 50% opacity */
+        }
+
+        .project-images {
+          margin-top: 25px;
+          align-items: center;
+        }
+
+        .project-images img:first-child {
+          -moz-border-radius: 0px;
+          -webkit-border-radius: 20px 20px 0px 0px;
+          border-radius: 20px 20px 0px 0px; 
+        }
+
+        .project-images img:last-child {
+          -moz-border-radius: 0px;
+          -webkit-border-radius: 0px 0px 20px 20px;
+          border-radius: 0px 0px 20px 20px; 
+        }
+      </style>
+  </head>
+
+  <body class="body">
+    <div class="topnav">
+      <header class="header d-flex flex-wrap py-2 mb-4">
+        <a draggable="false" (dragstart)="false;" href="/" class="unselectable d-flex me-md-auto topnav-image">
+          <img draggable="false" (dragstart)="false;" src="../static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
+          <!-- <h1 draggable="false" (dragstart)="false;" class="unselectable heading topnav-text">Merijn Vervoorn</h1> -->
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="../en/index" class="nav-link nav-animate" data-splitting>Home</a></li>
+          <li class="nav-item"><a href="../en/about" class="nav-link nav-animate" data-splitting>Over</a></li>
+          <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" class="nav-link nav-animate" data-splitting>Nieuwsbrief</a></li>
+          <li class="nav-item"><a href="../en/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
+          <li class="nav-item"><a draggable="false" (dragstart)="false;" href="/index" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
+        </ul>
+      </header>
+    </div>
+
+
+    <div class="project">
+            <img draggable="false" (dragstart)="false;" src="../static/projects/roaddanger-icon.svg" class="topnav-image unselectable" width="100px" loading="lazy">
+            <h2 class="hero-outline">Roaddanger</h2>
+
+            <p class="project-explain">In samenwerking met roaddanger.org hebben mijn projectgroep en ik een onderzoek gedaan naar dehumanisering in nieuwsartikelen over verkeersongevallen. In veel nieuwsartikelen over dit fenomeen worden de slachtoffers aangeduid als het voertuig waar ze in zaten, in plaats van als mens. Dit kan leiden tot een verhoogde acceptatie van verkeersongevallen en een afname van empathie voor de slachtoffers.
+              <br>
+              <br>
+              Om Journalisten te vertellen waar ze op zouden kunnen letten hebben wij een routekaart voor journalisten geschreven en een 'dehumaniserings checker' gemaakt die met behulp van AI de mate van humanisering controleert.
+
+              <p style="font-size: 13px;">Dit project is een samenwerking met Roaddanger, tijdens mijn BSc Computational Social Science</p>
+            </p>
+              
+           
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">AI</span>
+            </div>
+            <div>
+              <a class="project-button" href="Roaddanger.org">Bekijk Partner</a>
+              <a class="secondary-project-button" href="https://github.com/pythonpoet/roaddanger-scraper">Bekijk Project GitHub</a>
+            </div>
+
+
+            <div class="project-images">
+              <img draggable="false" (dragstart)="false;" src="../static/projects/roaddanger-hero-mock.png" class="topnav-image unselectable" width="100%" loading="lazy">
+              <img draggable="false" (dragstart)="false;" src="../static/projects/roaddanger-logos.png" class="topnav-image unselectable" width="100%" loading="lazy">
+              <img draggable="false" (dragstart)="false;" src="../static/projects/roaddanger-showcase.png" class="topnav-image unselectable" width="100%" loading="lazy">
+            </div>
+          </div>
+  
+   
+    
+
+
+
+    <div class="footer">
+      <div class="footer-row row row-cols-1 row-cols-lg-4">
+        <div class="col">
+          <img draggable="false" (dragstart)="false;" src="../static/logo/logo-zen.png" class="topnav-image unselectable center-img" width="200" >
+        </div>
+        <div class="col">
+          <p class="footer-head">Merijn Vervoorn</p>
+          <p class="footer-text">Ik ben Merijn, een student aan de UvA. Ik ben altijd op zoek naar nieuwe dingen om te leren en deel mijn kennis graag met anderen. Ik maak graag video's en podcasts en ben ook altijd bereid om anderen te helpen.</p>
+        </div>
+        <div class="col">
+          <p class="footer-head">Browse</p>
+          <ul class="footer-text">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="../about" class="footer-link">Over</a></li>
+            <li><a href="../contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="footer-head">Contact</p>
+          <p class="footer-text">Mail: <a href="mailto:merijnvervoorn@outlook.com" class="footer-link">merijnvervoorn@outlook.com</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="../script.js"></script> 
+
+  </body>
+</html>
