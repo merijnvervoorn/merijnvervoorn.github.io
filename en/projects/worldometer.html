@@ -9,7 +9,7 @@
     <meta name="author" content="Merijn Vervoorn">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="alternate" hreflang="nl" href="https://merijnvervoorn.com/projects/project-template" />
+    <link rel="alternate" hreflang="nl" href="https://merijnvervoorn.com/projects/worldometer" />
 
     <!-- Styles -->
     <!-- CSS --><link rel="stylesheet" href="/static/styles.css">
@@ -29,7 +29,7 @@
 
       <style>
         :root {
-          --project-color: 146, 141, 247; /* Change */
+          --project-color: 172, 202, 248;
         }
 
         .hero-outline {
@@ -145,41 +145,42 @@
           <li class="nav-item"><a href="/en/about" class="nav-link nav-animate" data-splitting>About</a></li>
           <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" target="_blank" class="nav-link nav-animate" data-splitting>Newsletter</a></li>
           <li class="nav-item"><a href="/en/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
-          <li class="nav-item"><a draggable="false" (dragstart)="false;" href="/projects/project-template" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
+          <li class="nav-item"><a draggable="false" (dragstart)="false;" href="/projects/worldometer" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
         </ul>
       </header>
     </div>
 
 
     <div class="project">
-            <img draggable="false" (dragstart)="false;" src="/static/projects/project-template-icon.png" class="topnav-image unselectable" width="100px" loading="lazy">
-            <h2 class="hero-outline">project-template</h2>
+            <img draggable="false" (dragstart)="false;" src="/static/projects/worldometer-icon.png" class="topnav-image unselectable" width="100px" loading="lazy">
+            <h2 class="hero-outline">World O'Meter</h2>
 
-            <!-- Change -->
-            <p class="project-explain">Lorem ipsum
+            <p class="project-explain">World O'Meter is a web application showcasing a relational database that analyzes the relationship between the number of headquarters of surveillance companies in a country and its freedom score.
               <br>
               <br>
-              Lorem ipsum
+              The idea is to find out whether freer countries have more surveillance firms than less free countries.
               <br>
               <br>
-              Lorem ipsum dolor
-              <p style="font-size: 13px;">This project is a collaboration with Merijn, during Merijn</p>
+              Since the dataset of surveillance firms has only 528 firms spread across 45 countries, chances are there is no correlation between the two datasets.
+              <p style="font-size: 13px;">This project was an assignment for my BSc Computational Social Science</p>
             </p>
               
            
             <div class="flex flex-wrap gap-2">
-              <span class="tech-pill">Placeholder</span>
+              <span class="tech-pill">Python Flask</span>
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">SQL</span>
             </div>
             <div>
-              <a class="project-button" href="https://merijnvervoorn.com/project-template" target="_blank">View project</a>
-              <a class="secondary-project-button" href="https://github.com/merijnvervoorn/project-template" target="_blank">View GitHub</a>
+              <a class="secondary-project-button" href="https://github.com/merijnvervoorn/worldometer" target="_blank">View GitHub</a>
             </div>
 
 
             <div class="project-images">
-              <img draggable="false" (dragstart)="false;" src="/static/projects/project-template-hero-mock.png" class="topnav-image unselectable" width="100%" loading="lazy">
-              <img draggable="false" (dragstart)="false;" src="/static/projects/project-template-logos.png" class="topnav-image unselectable" width="100%" loading="lazy">
-              <img draggable="false" (dragstart)="false;" src="/static/projects/project-template-showcase.png" class="topnav-image unselectable" width="100%" loading="lazy">
+              <img draggable="false" (dragstart)="false;" src="/static/projects/worldometer-hero-mock.png" class="topnav-image unselectable" width="100%" loading="lazy">
+              <img draggable="false" (dragstart)="false;" src="/static/projects/worldometer-logos.png" class="topnav-image unselectable" width="100%" loading="lazy">
+              <img draggable="false" (dragstart)="false;" src="/static/projects/worldometer-showcase.png" class="topnav-image unselectable" width="100%" loading="lazy">
             </div>
           </div>
   
