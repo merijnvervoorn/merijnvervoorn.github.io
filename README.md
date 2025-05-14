@@ -5,6 +5,8 @@
 
 Merijnvervoorn.com is my personal website, where I host and share my projects, insights, and ideas. The site is built using HTML, CSS, and JavaScript and is hosted on GitHub Pages.
 
+![image](https://github.com/user-attachments/assets/a07e68ad-3951-4c16-b276-f61304f91aea)
+
 ---
 
 ## 🚀 Live Version
