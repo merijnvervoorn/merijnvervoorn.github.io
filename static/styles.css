@@ -160,7 +160,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.h2 {
     font-family: "unbounded", sans-serif;
     line-height: 1.5;
     margin: 0;
@@ -184,7 +185,7 @@ h1 {
     font-weight: 700  !important;
 }
 
-h2 {
+h2, .h2 {
     
     font-size: var(--h2)!important;
     letter-spacing: 0 !important;

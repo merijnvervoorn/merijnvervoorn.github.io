@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <!-- SEO & Meta-->
+    <title>Over - Merijn Vervoorn</title>
+    <link rel="icon" type="image/x-icon" href="/static/logo/favi.png">
+    <meta name="description" content="Merijn Vervoorn is een student aan de UvA. Hij is altijd op zoek naar nieuwe dingen om te leren en deelt zijn kennis graag met anderen. Hij maakt graag video's en podcasts en is ook altijd bereid om anderen te helpen.">
+    <meta name="keywords" content="Merijn, Vervoorn, Merijn Vervoorn">
+    <meta name="author" content="Merijn Vervoorn">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" hreflang="en" href="https://merijnvervoorn.com/en/about" />
+
+    <!-- Styles -->
+    <!-- CSS --><link rel="stylesheet" href="static/styles.css">
+    <!-- Bootstrap --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Font Awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts via Google -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Animate --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- splitting -->
+      <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+      <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+      <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="1a61f729-43e1-4b1e-afe6-883487b48bd0"></script>
+
+    <style>
+      /* Enhanced Story-driven Styles */
+      .story-section {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .story-content {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+      }
+      
+      .story-content.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .floating-shape {
+        position: absolute;
+        opacity: 0.1;
+        animation: float 6s ease-in-out infinite;
+        pointer-events: none;
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(180deg); }
+      }
+      
+      .chapter-number {
+        font-size: 8rem;
+        font-weight: 100;
+        color: rgba(108, 117, 125, 0.1);
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        z-index: -1;
+        font-family: 'Unbounded', cursive;
+      }
+      
+      .story-image {
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .story-image:hover {
+        transform: translateY(-10px) rotate(2deg);
+      }
+      
+      .purple-accent {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .journey-timeline {
+        position: relative;
+        padding: 2rem 0;
+      }
+      
+      .journey-timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, #667eea, #764ba2);
+        transform: translateX(-50%);
+      }
+      
+      .timeline-item {
+        position: relative;
+        margin: 4rem 0;
+      }
+      
+      .timeline-dot {
+        position: absolute;
+        left: 50%;
+        top: 2rem;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border-radius: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+      
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+      }
+      
+      .skill-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .skill-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(103, 126, 234, 0.1), transparent);
+        transform: rotate(45deg);
+        transition: all 0.6s;
+        opacity: 0;
+      }
+      
+      .skill-card:hover::before {
+        opacity: 1;
+        animation: shimmer 1.5s infinite;
+      }
+      
+      @keyframes shimmer {
+        0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+        100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+      }
+      
+      .skill-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px rgba(103, 126, 234, 0.2);
+      }
+      
+      .mission-section {
+        background: linear-gradient(135deg, rgba(103, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+        border-radius: 30px;
+        padding: 4rem 2rem;
+        margin: 4rem 0;
+        position: relative;
+      }
+      
+      .cta-section {
+        text-align: center;
+        padding: 4rem 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 30px;
+        color: white;
+        margin: 4rem 0;
+        max-width: 1250px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+      
+      .cta-button {
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 1rem 3rem;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+      }
+      
+      .cta-button:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      }
+      
+      .quote-section {
+        font-style: italic;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 3rem 0;
+        position: relative;
+      }
+      
+      .quote-section::before,
+      .quote-section::after {
+        content: '"';
+        font-size: 4rem;
+        color: rgba(103, 126, 234, 0.3);
+        position: absolute;
+        font-family: serif;
+      }
+      
+      .quote-section::before {
+        top: 0;
+        left: 2rem;
+      }
+      
+      .quote-section::after {
+        bottom: 0;
+        right: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        .chapter-number {
+          font-size: 4rem;
+        }
+        
+        .journey-timeline::before {
+          left: 2rem;
+        }
+        
+        .timeline-dot {
+          left: 2rem;
+        }
+        
+        .timeline-item {
+          padding-left: 4rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="body">
+    <!-- Keep original header -->
+    <div class="topnav">
+      <header class="header d-flex flex-wrap py-2 mb-4">
+        <a draggable="false" (dragstart)="false;" href="/" class="unselectable d-flex me-md-auto topnav-image">
+          <img draggable="false" (dragstart)="false;" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="/" class="nav-link nav-animate" data-splitting>Home</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link nav-link-active">Over</a></li>
+          <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" target="_blank" class="nav-link nav-animate" data-splitting>Nieuwsbrief</a></li>
+          <li class="nav-item"><a href="/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
+          <li class="nav-item"><a draggable="false" (dragstart)="false;" href="/en/about" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
+        </ul>
+      </header>
+    </div>
+
+    <!-- Hero Introduction -->
+    <section class="story-section animate__animated animate__fadeIn">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 story-content">
+            <div class="chapter-number">01</div>
+            <h1 class="display-4 heading mb-4">Hallo, ik ben <span class="purple-accent h2">Merijn</span></h1>
+            <p class="lead">Een verhaal over curiositeit, groei en het vinden van paarse linkjes in een wereld vol blauwe...</p>
+          </div>
+          <div class="col-lg-6">
+            <img src="/static/image/introduction.jpg" class="story-image img-fluid" alt="Merijn Vervoorn">
+          </div>
+        </div>
+      </div>
+      <div class="floating-shape" style="top: 10%; right: 10%;">
+        <img src="/static/shape/pl-sq.png" width="100" alt="">
+      </div>
+    </section>
+
+    <!-- The Journey Begins -->
+    <section class="story-section">
+      <div class="container">
+        <div class="story-content">
+          <div class="chapter-number">02</div>
+          <h2 class="heading mb-4">Het begon met <span class="purple-accent h2">nieuwsgierigheid</span></h2>
+          <div class="row">
+            <div class="col-lg-8">
+              <p class="fs-5">Als computational social science student aan de UvA ontdekte ik de kracht van data om maatschappelijke vraagstukken te begrijpen en op te lossen. Maar het echte verhaal begint niet in de collegezaal...</p>
+              
+              <p>Het begon met YouTube-video's over interessante onderwerpen, met boeken die mijn perspectief veranderden - van <em>Digital Minimalism</em> tot <em>Ready Player One</em>. Het begon met de realisatie dat elke dag een kans is om iets nieuws te leren.</p>
+              
+              <div class="quote-section">
+                Elke dag is een nieuwe kans om iets te ontdekken dat je nog niet wist
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-shape" style="bottom: 10%; left: 10%;">
+        <img src="/static/shape/yl-tri.png" width="120" alt="">
+      </div>
+    </section>
+
+    <!-- Skills & Expertise -->
+    <section class="story-section">
+      <div class="container">
+        <div class="story-content">
+          <div class="chapter-number">03</div>
+          <h2 class="heading mb-4">Van passie naar <span class="purple-accent h2">expertise</span></h2>
+          
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+              <img src="/static/image/skills.jpg" class="story-image img-fluid" alt="Skills">
+            </div>
+            <div class="col-lg-6">
+              <p class="fs-5">Nieuwsgierigheid alleen is niet genoeg. Je moet je passie omzetten in vaardigheden, en die vaardigheden gebruiken om echte problemen op te lossen.</p>
+            </div>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h4 class="heading">💻 Technische Vaardigheden</h4>
+              <p>Python, HTML/CSS, SQL, LaTeX - de tools om ideeën om te zetten in werkelijke oplossingen.</p>
+            </div>
+            
+            <div class="skill-card">
+              <h4 class="heading">🎨 Creative Suite</h4>
+              <p>Adobe Design programma's - omdat data-verhalen ook visueel verteld moeten worden.</p>
+            </div>
+            
+            <div class="skill-card">
+              <h4 class="heading">🗣️ Communicatie</h4>
+              <p>Nederlands & Engels, Cambridge gecertificeerd - omdat de beste oplossingen niets waard zijn als je ze niet kunt uitleggen.</p>
+            </div>
+            
+            <div class="skill-card">
+              <h4 class="heading">📊 Projectmanagement</h4>
+              <p>Van concept tot uitvoering - elk project is een verhaal dat verteld wil worden.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Mission -->
+    <section class="story-section">
+      <div class="container">
+        <div class="story-content">
+          <div class="chapter-number">04</div>
+          <h2 class="heading mb-4">Ervaring wordt <span class="purple-accent h2">wijsheid</span></h2>
+          
+          <div class="journey-timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="heading">🎥 Content Creator</h4>
+                  <p>Video's, podcasts, nieuwsbrieven - elk medium is een nieuwe manier om kennis te delen en mensen te inspireren.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="row">
+                <div class="col-md-6 offset-md-6">
+                  <h4 class="heading">🏃‍♂️ Balance Finder</h4>
+                  <p>Hardlopen leert me dat consistentie belangrijker is dan snelheid - een les die ik toepas in alles wat ik doe.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="heading">🎓 Certified Professional</h4>
+                  <p>NIMA en Cambridge certificeringen - formele erkenning van wat passie en toewijding kunnen bereiken.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Purple Philosophy -->
+    <section class="story-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="/static/image/be-purple.jpg" class="story-image img-fluid" alt="Wees paars">
+          </div>
+          <div class="col-lg-6 story-content">
+            <div class="chapter-number">05</div>
+            <h2 class="heading mb-4"><span class="purple-accent h2">Wees paars</span> waar anderen blauw zijn!</h2>
+            
+            <p class="fs-5">Dit is meer dan een slogan - het is een filosofie.</p>
+            
+            <p>In webdesign zijn onbezochte links blauw. Maar zodra je erop klikt, worden ze paars. Voor mij symboliseert dit de transformatie die plaatsvindt wanneer je de moed hebt om te klikken, te ontdekken, te leren.</p>
+            
+            <p>Elk paars linkje in mijn nieuwsbrief 'Merijns Relatieve Tijdsaanduiding' is een uitnodiging voor een nieuwe 'rabbit hole' - een nieuwe wereld om te verkennen.</p>
+            
+            <div class="mission-section">
+              <h3 class="heading text-center">Mijn Missie</h3>
+              <p class="text-center fs-5">Mijn vaardigheden gebruiken om een positieve impact te hebben op mijn werk en de wereld om ons heen. Want als je blijft leren en ontwikkelen, kan je de wereld aan - soms alleen, meestal samen met een geweldig team.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-shape" style="top: 20%; right: 5%;">
+        <img src="/static/shape/bc-cir.png" width="80" alt="">
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="story-content">
+          <h2 class="display-5 mb-4">Klaar om samen paarse linkjes te ontdekken?</h2>
+          <p class="fs-5 mb-4" style="text-align: center; color: white;">Laten we een gesprek starten over jouw project, uitdaging, of gewoon over interessante ideeën.</p>
+          <button type="button" class="cta-button btn btn-lg" onclick="window.location.href='contact';">Start het gesprek</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keep original footer -->
+    <div class="footer">
+      <div class="footer-row row row-cols-1 row-cols-lg-4">
+        <div class="col">
+          <img draggable="false" (dragstart)="false;" src="/static/logo/logo-glossary.png" class="topnav-image unselectable center-img" width="200" >
+        </div>
+        <div class="col">
+          <p class="footer-head heading">Merijn Vervoorn</p>
+          <p class="footer-text">Ik ben Merijn, een student aan de UvA. Ik ben altijd op zoek naar nieuwe dingen om te leren en deel mijn kennis graag met anderen. Ik maak graag video's en podcasts en ben ook altijd bereid om anderen te helpen.</p>
+        </div>
+        <div class="col">
+          <p class="footer-head heading">Browse</p>
+          <ul class="footer-text">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/about" class="footer-link">Over</a></li>
+            <li><a href="/contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="footer-head heading">Contact</p>
+          <p class="footer-text"><a href="mailto:merijnvervoorn@outlook.com" class="footer-link">merijnvervoorn@outlook.com</a></p>
+          <div>
+            <a draggable="false" (dragstart)="false;" href="https://www.linkedin.com/in/merijnvervoorn/" target="_blank" class="fa fa-footer fa-linkedin unselectable" style="font-size: 3rem;"></a>
+            <a draggable="false" (dragstart)="false;" href="https://www.youtube.com/@merijnvervoorn" target="_blank" class="fa fa-footer fa-youtube unselectable" style="font-size: 3rem;"></a>
+            <a draggable="false" (dragstart)="false;" href="https://github.com/merijnvervoorn" target="_blank" class="fa fa-github fa-footer unselectable" style="font-size: 3rem;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+    
+    <script>
+      // Intersection Observer for story animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+
+      // Observe all story content elements
+      document.querySelectorAll('.story-content').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Add floating animation delay to shapes
+      document.querySelectorAll('.floating-shape').forEach((shape, index) => {
+        shape.style.animationDelay = `${index * 2}s`;
+      });
+    </script>
+  </body>
+</html>
