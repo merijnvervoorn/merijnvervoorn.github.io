@@ -36,6 +36,7 @@
         align-items: center;
         position: relative;
         overflow: hidden;
+        margin-top: 5rem;
       }
       
       .story-content {
@@ -258,21 +259,29 @@
 
   <body class="body">
     <!-- Keep original header -->
-    <div class="topnav">
-      <header class="header d-flex flex-wrap py-2 mb-4">
-        <a draggable="false" (dragstart)="false;" href="/" class="unselectable d-flex me-md-auto topnav-image">
-          <img draggable="false" (dragstart)="false;" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
-        </a>
-  
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="/" class="nav-link nav-animate" data-splitting>Home</a></li>
-          <li class="nav-item"><a href="/about" class="nav-link nav-link-active">Over</a></li>
-          <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" target="_blank" class="nav-link nav-animate" data-splitting>Nieuwsbrief</a></li>
-          <li class="nav-item"><a href="/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
-          <li class="nav-item"><a draggable="false" (dragstart)="false;" href="/en/about" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
-        </ul>
-      </header>
+<div class="topnav">
+  <header class="header d-flex flex-wrap py-2 mb-4">
+    <a draggable="false" href="/" class="unselectable d-flex me-md-auto topnav-image">
+      <img draggable="false" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
+    </a>
+
+    <!-- Hamburger button for mobile -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
+    <ul class="nav nav-pills" id="nav-menu">
+      <li class="nav-item"><a href="/" class="nav-link nav-animate">Home</a></li>
+      <li class="nav-item"><a href="/about" class="nav-link nav-link-active">Over</a></li>
+      <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" target="_blank" class="nav-link nav-animate">Nieuwsbrief</a></li>
+      <li class="nav-item"><a href="/contact" class="nav-link nav-animate">Contact</a></li>
+      <li class="nav-item"><a href="/en/about" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
+    </ul>
+  </header>
+</div>
+
 
     <!-- Hero Introduction -->
     <section class="story-section animate__animated animate__fadeIn">
@@ -280,8 +289,8 @@
         <div class="row align-items-center">
           <div class="col-lg-6 story-content">
             <div class="chapter-number">01</div>
-            <h1 class="display-4 heading mb-4">Hallo, ik ben <span class="purple-accent h2">Merijn</span></h1>
-            <p class="lead">Een verhaal over curiositeit, groei en het vinden van paarse linkjes in een wereld vol blauwe...</p>
+            <h1 class="display-4 heading mb-4">Hoi, ik ben <span class="purple-accent h2">Merijn</span></h1>
+            <p class="lead">Geboren in Zoeterwoude, een dorpje tussen Leiden en Zoetermeer. Ik was een simpel jongetje, met grootse dromen. De ene week wilde ik astronaut worden, dan weer goochelaar. Een week later maakte ik stop-motion films met Gogo's (die poppetjes van de C1000). Van jongs af aan was ik bezig met mezelf creatief uiten. Elke dag was een moment om iets nieuws te leren.</p>
           </div>
           <div class="col-lg-6">
             <img src="/static/image/introduction.jpg" class="story-image img-fluid" alt="Merijn Vervoorn">
@@ -296,20 +305,18 @@
     <!-- The Journey Begins -->
     <section class="story-section">
       <div class="container">
-        <div class="story-content">
-          <div class="chapter-number">02</div>
-          <h2 class="heading mb-4">Het begon met <span class="purple-accent h2">nieuwsgierigheid</span></h2>
-          <div class="row">
-            <div class="col-lg-8">
-              <p class="fs-5">Als computational social science student aan de UvA ontdekte ik de kracht van data om maatschappelijke vraagstukken te begrijpen en op te lossen. Maar het echte verhaal begint niet in de collegezaal...</p>
-              
-              <p>Het begon met YouTube-video's over interessante onderwerpen, met boeken die mijn perspectief veranderden - van <em>Digital Minimalism</em> tot <em>Ready Player One</em>. Het begon met de realisatie dat elke dag een kans is om iets nieuws te leren.</p>
-              
-              <div class="quote-section">
-                Elke dag is een nieuwe kans om iets te ontdekken dat je nog niet wist
-              </div>
-            </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="/static/image/first-youtube.png" class="story-image img-fluid" alt="eerste video">
+            <p style="color: gray; font-size: 0.8rem;">Disclaimer: Nagemaakt met behulp van ChatGPT</p>
           </div>
+          <div class="col-lg-6 story-content">
+            <div class="chapter-number">02</div>
+            <h2 class="heading mb-4">Het begon met <span class="purple-accent h2">nieuwsgierigheid</span></h2>
+            <p class="fs-5">De vondst van YouTube zorgde voor een uitbreiding van de manier waarop ik dingen kon leren. Ook ben ik boeken gaan lezen over verschillende onderwerpen, van fictie tot non-fictie.</p>
+              <p>Toen ik negen was uploadde ik mijn eerste eigen video op YouTube. Trots stond ik in mijn Superman-pyjama voor de webcam van mijn vaders laptop een kaarttruc te vertonen.</p>
+              <p>Met tien jaar was ik volop websites aan het bouwen (ja, merijnvervoorn.jouwweb.nl was van mij, en wat dacht je van pannenkoekenrecepten.wix.com). Hier groeide mijn liefde voor creëren verder. Ik begon mezelf alles aan te leren, van hoe ik een eigen Minecraft-server kon hosten tot hoe ik afbeeldingen en video's kon bewerken. Omdat ik veel wilde leren zonder geld uit te geven, ben ik gewend geraakt aan het zoeken naar gratis oplossingen voor mijn problemen. Daardoor heb ik veel meer ervaring opgedaan dan wanneer ik simpelweg de beste software had gekocht.</p>
+            </div>
         </div>
       </div>
       <div class="floating-shape" style="bottom: 10%; left: 10%;">
@@ -322,36 +329,14 @@
       <div class="container">
         <div class="story-content">
           <div class="chapter-number">03</div>
-          <h2 class="heading mb-4">Van passie naar <span class="purple-accent h2">expertise</span></h2>
-          
+          <h2 class="heading mb-4">Leren & <span class="purple-accent h2">creëren</span></h2>
           <div class="row align-items-center mb-5">
-            <div class="col-lg-6">
-              <img src="/static/image/skills.jpg" class="story-image img-fluid" alt="Skills">
+            <div class="col-lg-7">
+              <p class="fs-5">Op de middelbare school ontdekte ik de kracht van verhalen vertellen. Ik werd hoofdredacteur van de schoolkrant, startte een podcast en leerde hoe je mensen kunt inspireren met woorden en beelden. Later, tijdens mijn studie Computational Social Science aan de UvA, leerde ik hoe data en technologie maatschappelijke vraagstukken kunnen helpen oplossen. Mijn nieuwsgierigheid werd steeds meer een gereedschap om de wereld te begrijpen én te veranderen.</p>
             </div>
-            <div class="col-lg-6">
-              <p class="fs-5">Nieuwsgierigheid alleen is niet genoeg. Je moet je passie omzetten in vaardigheden, en die vaardigheden gebruiken om echte problemen op te lossen.</p>
-            </div>
-          </div>
-
-          <div class="skills-grid">
-            <div class="skill-card">
-              <h4 class="heading">💻 Technische Vaardigheden</h4>
-              <p>Python, HTML/CSS, SQL, LaTeX - de tools om ideeën om te zetten in werkelijke oplossingen.</p>
-            </div>
-            
-            <div class="skill-card">
-              <h4 class="heading">🎨 Creative Suite</h4>
-              <p>Adobe Design programma's - omdat data-verhalen ook visueel verteld moeten worden.</p>
-            </div>
-            
-            <div class="skill-card">
-              <h4 class="heading">🗣️ Communicatie</h4>
-              <p>Nederlands & Engels, Cambridge gecertificeerd - omdat de beste oplossingen niets waard zijn als je ze niet kunt uitleggen.</p>
-            </div>
-            
-            <div class="skill-card">
-              <h4 class="heading">📊 Projectmanagement</h4>
-              <p>Van concept tot uitvoering - elk project is een verhaal dat verteld wil worden.</p>
+            <div class="col-lg-5">
+              <!-- Placeholder voor een foto van een project of podcast -->
+              <img src="/static/image/speech.jpg" class="story-image img-fluid" alt="Projectfoto (placeholder)">
             </div>
           </div>
         </div>
@@ -363,37 +348,14 @@
       <div class="container">
         <div class="story-content">
           <div class="chapter-number">04</div>
-          <h2 class="heading mb-4">Ervaring wordt <span class="purple-accent h2">wijsheid</span></h2>
-          
-          <div class="journey-timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="row">
-                <div class="col-md-6">
-                  <h4 class="heading">🎥 Content Creator</h4>
-                  <p>Video's, podcasts, nieuwsbrieven - elk medium is een nieuwe manier om kennis te delen en mensen te inspireren.</p>
-                </div>
-              </div>
+          <h2 class="heading mb-4">Blijven <span class="purple-accent h2">doorgaan</span></h2>
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+              <p class="fs-5">Naast studeren en creëren ben ik ook gaan werken. Ik begon in een dierenwinkel als hulpkracht, en daarna heb ik een tijd als fietskoerier gewerkt. Nu werk ik als student projectassistent bij de UvA, waar ik mijn organisatorische vaardigheden en creativiteit kan inzetten. Als hardloper heb ik geleerd dat je jezelf moet blijven uitdagen om te groeien. Dit helpt me om altijd nieuwe uitdagingen aan te gaan.</p>
             </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="row">
-                <div class="col-md-6 offset-md-6">
-                  <h4 class="heading">🏃‍♂️ Balance Finder</h4>
-                  <p>Hardlopen leert me dat consistentie belangrijker is dan snelheid - een les die ik toepas in alles wat ik doe.</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="row">
-                <div class="col-md-6">
-                  <h4 class="heading">🎓 Certified Professional</h4>
-                  <p>NIMA en Cambridge certificeringen - formele erkenning van wat passie en toewijding kunnen bereiken.</p>
-                </div>
-              </div>
+            <div class="col-lg-6">
+              <!-- Placeholder voor een hardloopfoto -->
+              <img src="/static/image/hardlopen.jpg" class="story-image img-fluid" alt="Hardlopen (placeholder)">
             </div>
           </div>
         </div>
@@ -405,22 +367,14 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <img src="/static/image/be-purple.jpg" class="story-image img-fluid" alt="Wees paars">
+            <img src="/static/image/be-purple.jpg" class="story-image img-fluid" alt="Paars zijn">
           </div>
           <div class="col-lg-6 story-content">
             <div class="chapter-number">05</div>
-            <h2 class="heading mb-4"><span class="purple-accent h2">Wees paars</span> waar anderen blauw zijn!</h2>
-            
-            <p class="fs-5">Dit is meer dan een slogan - het is een filosofie.</p>
-            
-            <p>In webdesign zijn onbezochte links blauw. Maar zodra je erop klikt, worden ze paars. Voor mij symboliseert dit de transformatie die plaatsvindt wanneer je de moed hebt om te klikken, te ontdekken, te leren.</p>
-            
-            <p>Elk paars linkje in mijn nieuwsbrief 'Merijns Relatieve Tijdsaanduiding' is een uitnodiging voor een nieuwe 'rabbit hole' - een nieuwe wereld om te verkennen.</p>
-            
-            <div class="mission-section">
-              <h3 class="heading text-center">Mijn Missie</h3>
-              <p class="text-center fs-5">Mijn vaardigheden gebruiken om een positieve impact te hebben op mijn werk en de wereld om ons heen. Want als je blijft leren en ontwikkelen, kan je de wereld aan - soms alleen, meestal samen met een geweldig team.</p>
-            </div>
+            <h2 class="heading mb-4">Wees <span class="purple-accent h2">paars</span> waar anderen blauw zijn!</h2>
+            <p class="fs-5">Misschien is het je opgevallen: ik hou ervan om af en toe anders te denken, nieuwsgierig te blijven en niet bang te zijn om nieuwe dingen te proberen. Dat is voor mij waar 'paars zijn' voor staat.</p>
+            <div class="quote-section">Paars zijn is nieuwsgierig zijn, en net even anders durven denken</div>
+            <p class="fs-5">In webdesign zijn links blauw. Maar zodra je erop klikt, worden ze paars. Voor mij symboliseert dat het moment dat je iets nieuws leert, durft te ontdekken, en durft te leren. Met alles wat ik maak, van code tot content, wil ik mensen meegeven hoe mooi nieuwsgierig zijn is. Leren stopt nooit, er valt altijd meer te ontdekken.</p>
           </div>
         </div>
       </div>
@@ -433,9 +387,9 @@
     <section class="cta-section">
       <div class="container">
         <div class="story-content">
-          <h2 class="display-5 mb-4">Klaar om samen paarse linkjes te ontdekken?</h2>
+          <h2 class="display-5 mb-4">Klaar om samen paarse linkjes te maken?</h2>
           <p class="fs-5 mb-4" style="text-align: center; color: white;">Laten we een gesprek starten over jouw project, uitdaging, of gewoon over interessante ideeën.</p>
-          <button type="button" class="cta-button btn btn-lg" onclick="window.location.href='contact';">Start het gesprek</button>
+          <button type="button" class="cta-button btn btn-lg" onclick="window.location.href='contact';">Link met mij</button>
         </div>
       </div>
     </section>
@@ -496,6 +450,17 @@
       document.querySelectorAll('.floating-shape').forEach((shape, index) => {
         shape.style.animationDelay = `${index * 2}s`;
       });
+
+
+
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+
+
     </script>
   </body>
 </html>
