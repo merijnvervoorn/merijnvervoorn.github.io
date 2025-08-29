@@ -12,7 +12,7 @@
     <link rel="alternate" hreflang="nl" href="https://merijnvervoorn.com/about" />
 
     <!-- Styles -->
-    <!-- CSS --><link rel="stylesheet" href="/static/styles.css">
+    <!-- CSS --><link rel="stylesheet" href="static/styles.css">
     <!-- Bootstrap --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Font Awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Fonts via Google -->
@@ -27,6 +27,237 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
       <script defer src="https://cloud.umami.is/script.js" data-website-id="1a61f729-43e1-4b1e-afe6-883487b48bd0"></script>
+
+    <style>
+      /* Enhanced Story-driven Styles */
+      .story-section {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 5rem;
+      }
+      
+      .story-content {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+      }
+      
+      .story-content.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .floating-shape {
+        position: absolute;
+        opacity: 0.1;
+        animation: float 6s ease-in-out infinite;
+        pointer-events: none;
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(180deg); }
+      }
+      
+      .chapter-number {
+        font-size: 8rem;
+        font-weight: 100;
+        color: rgba(108, 117, 125, 0.1);
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        z-index: -1;
+        font-family: 'Unbounded', cursive;
+      }
+      
+      .story-image {
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .story-image:hover {
+        transform: translateY(-10px) rotate(2deg);
+      }
+      
+      .purple-accent {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .journey-timeline {
+        position: relative;
+        padding: 2rem 0;
+      }
+      
+      .journey-timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, #667eea, #764ba2);
+        transform: translateX(-50%);
+      }
+      
+      .timeline-item {
+        position: relative;
+        margin: 4rem 0;
+      }
+      
+      .timeline-dot {
+        position: absolute;
+        left: 50%;
+        top: 2rem;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border-radius: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+      
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+      }
+      
+      .skill-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .skill-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(103, 126, 234, 0.1), transparent);
+        transform: rotate(45deg);
+        transition: all 0.6s;
+        opacity: 0;
+      }
+      
+      .skill-card:hover::before {
+        opacity: 1;
+        animation: shimmer 1.5s infinite;
+      }
+      
+      @keyframes shimmer {
+        0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+        100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+      }
+      
+      .skill-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px rgba(103, 126, 234, 0.2);
+      }
+      
+      .mission-section {
+        background: linear-gradient(135deg, rgba(103, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+        border-radius: 30px;
+        padding: 4rem 2rem;
+        margin: 4rem 0;
+        position: relative;
+      }
+      
+      .cta-section {
+        text-align: center;
+        padding: 4rem 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 30px;
+        color: white;
+        margin: 4rem 0;
+        max-width: 1250px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+      
+      .cta-button {
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 1rem 3rem;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+      }
+      
+      .cta-button:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      }
+      
+      .quote-section {
+        font-style: italic;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 3rem 0;
+        position: relative;
+      }
+      
+      .quote-section::before,
+      .quote-section::after {
+        content: '"';
+        font-size: 4rem;
+        color: rgba(103, 126, 234, 0.3);
+        position: absolute;
+        font-family: serif;
+      }
+      
+      .quote-section::before {
+        top: 0;
+        left: 2rem;
+      }
+      
+      .quote-section::after {
+        bottom: 0;
+        right: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        .chapter-number {
+          font-size: 4rem;
+        }
+        .heading {
+          font-size: 2rem !important;
+        }
+        .heading .purple-accent, .heading.purple-accent {
+          font-size: 2rem !important;
+        }
+        .journey-timeline::before {
+          left: 2rem;
+        }
+        .timeline-dot {
+          left: 2rem;
+        }
+        .timeline-item {
+          padding-left: 4rem;
+        }
+      }
+    </style>
   </head>
 
       <body class="body">
@@ -45,76 +276,142 @@
           <li class="nav-item"><a href="/en/about" class="nav-link nav-link-active">About</a></li>
           <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" target="_blank" class="nav-link nav-animate" data-splitting>Newsletter</a></li>
           <li class="nav-item"><a href="/en/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
-          <li class="nav-item"><a href="/about" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
+          <li class="nav-item"><a href="/contact" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
         </ul>
       </header>
     </div>
 
-    <div class="animate__animated animate__backInUp">
-        <div class="intro container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="/static/image/introduction.jpg" class="d-block mx-lg-auto img-fluid center-img" alt="Merijn Vervoorn" height="400" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="introduction-title heading">Introduction</h2>
-                    <p class="introduction-text">Hey! I'm Merijn, an ambitious student of computational social science. Here I help companies with digital and data-driven solutions for various societal problems, constantly exploring new challenges and growth opportunities. This passion for new challenges is also visible in the rest of my life, in which I like to help people. I also love making videos and podcasts, and I like to learn new things by watching YouTube videos about interesting topics. I also like to read (yes, in a real book). The books I read are a variation of non-fiction (Digital minimalism, Atomic Habits) and fiction (Ready Player One, Tomorrow, and Tomorrow, and Tomorrow). In my spare time I also run.</p>
-                  </div>
+
+<!-- Hero Introduction -->
+    <section class="story-section animate__animated animate__fadeIn">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 story-content">
+            <div class="chapter-number">01</div>
+            <h1 class="display-4 heading mb-4">Hi, I'm <span class="purple-accent h2">Merijn</span></h1>
+            <p class="lead">Born in Zoeterwoude, The Netherlands, a small village near Leiden. From a young age I was curious, and I liked to think just a little different than the rest. This week I wanted to be an astronaut, the next week I wanted to be a magician. And another week later I would make a full-fletched stop-motion with action figures. Early on I was already creatively expressing myself. Every day was a moment to learn something new.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img src="/static/image/introduction.jpg" class="story-image img-fluid" alt="Merijn Vervoorn">
+          </div>
+        </div>
+      </div>
+      <div class="floating-shape" style="top: 10%; right: 10%;">
+        <img src="/static/shape/pl-sq.png" width="100" alt="">
+      </div>
+    </section>
+
+    <!-- The Journey Begins -->
+    <section class="story-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="/static/image/first-youtube.png" class="story-image img-fluid" alt="eerste video">
+            <p style="color: gray; font-size: 0.8rem;">Disclaimer: Made with the help of ChatGPT</p>
+          </div>
+          <div class="col-lg-6 story-content">
+            <div class="chapter-number">02</div>
+            <h2 class="heading mb-4">It started with <span class="purple-accent h2">curiosity</span></h2>
+            <p class="fs-5">
+              Finding YouTube opened up a whole new world of learning for me. I also started reading books on a variety of topics, from fiction to non-fiction.
+            </p>
+              <p>
+                When I was nine, I uploaded my first video on YouTube. Proudly, I stood in my Superman pajamas in front of my dad's laptop webcam, demonstrating a card trick.
+              </p>
+              <p>
+                At ten years old, I was building websites (yes, merijnvervoorn.jouwweb.nl was mine, and what about pancakerecipes.wix.com). Here my love for creating grew further. I started teaching myself everything, from how to host my own Minecraft server to how to edit images and videos. Because I wanted to learn a lot without spending money, I got used to looking for free solutions to my problems. As a result, I gained much more experience than if I would have simply bought the best software.
+              </p>
             </div>
         </div>
+      </div>
+      <div class="floating-shape" style="bottom: 10%; left: 10%;">
+        <img src="/static/shape/yl-tri.png" width="120" alt="">
+      </div>
+    </section>
 
-        <img draggable="false" (dragstart)="false;" src="/static/shape/pl-sq.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Vierkant" width="200" height="200" loading="lazy">
-
-        <div class="skills container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="/static/image/skills.jpg" class="d-block mx-lg-auto img-fluid center-img" alt="Skills" height="400" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="introduction-title2 heading">Skills</h2> 
-                    <p class="introduction-text">With a talent for creative problem solving and project management, and fluent in both Dutch and English, interactions with stakeholders and clients are no problem. My studies have also equipped me with strong teamwork and report writing skills.
-                        <br>
-                        My proficiency in various technical fields, including Adobe Design programs, Python, HTML, CSS, LaTeX, Microsoft Office and SQL, enhances my ability to contribute to digital projects, simplify processes and present complex information in an accessible way.</p>
-                        
-                      </div>
+    <!-- Skills & Expertise -->
+    <section class="story-section">
+      <div class="container">
+        <div class="story-content">
+          <div class="chapter-number">03</div>
+          <h2 class="heading mb-4">Learning & <span class="purple-accent h2">creating</span></h2>
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-7">
+              <p class="fs-5">
+                In secondary school I discovered the power of storytelling. I became the editor-in-chief of the school newspaper, started a podcast, and learned how to inspire people with words and images. Later, during my studies in Computational Social Science at the University of Amsterdam, I learned how data and technology can help address social issues. My curiosity became an increasingly important tool for understanding and changing the world.
+              </p>
             </div>
-        </div>
-
-        <div class="ambition px-4 py-5" id="featured-3">
-            <div class="ambition-row row g-4 py-5 row-cols-1 row-cols-lg-2">
-                <div class="feature col">
-                  <img draggable="false" (dragstart)="false;" src="/static/shape/yl-tri.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Driehoek" width="200" height="200" loading="lazy">
-                    <h2 class="ambition-head heading">Experience</h2>
-                    <p class="ambition-text">My passion for multimedia also extends to my personal experience in creating videos, newsletters and podcasts, using creative communication skills to deliver messages in a variety of ways. Additionally, my Cambridge and NIMA certifications have demonstrated that I have a strong foundation in professional communications and marketing.</p>
-                </div>
-                <div class="feature col">
-                  <img draggable="false" (dragstart)="false;" src="/static/shape/bc-cir.png" class="unselectable d-block mx-lg-auto img-fluid center-img" alt="Cirkel" width="200" height="200" loading="lazy">
-                    <h2 class="ambition-head2 heading">Mission</h2>
-                    <p class="ambition-text">I am motivated to develop and use my skills to have a positive impact on my work and the world around us. If you keep learning and developing you can take on the world, sometimes with the help of a team.</p>
-                </div>
+            <div class="col-lg-5">
+              <!-- Placeholder voor een foto van een project of podcast -->
+              <img src="/static/image/speech.jpg" class="story-image img-fluid" alt="Projectfoto (placeholder)">
             </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="contact-container">
-            <h2 class="heading">Contact me</h2>
-            <button type="button" class="btn btn-outline-secondary btn-lg" onclick="window.location.href='/en/contact';">Contact</button>
-        </div>
-
-        <div class="skills container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="/static/image/be-purple.jpg" class="d-block mx-lg-auto img-fluid center-img" alt="Wees paars" height="400" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="heading wees-paars-explanation">Be purple where others are blue!</h2>
-                    <p class="introduction-text">The slogan 'Be purple where others are blue' stands for being able to be different from the rest. And you know what's funny? In web design, unvisited links are usually blue, but when you click on them, they turn purple. To me, this means that you should always make new discoveries so that you always keep learning.
-                        <br>
-                        For me it is not just about how the website looks, but also about the adventure of learning. Each purple link represents a new adventure within a larger 'Rabbithole'. This idea is central to my newsletter 'Merijns Relatieve Tijdstekening'. The slogan remains an invitation to all of you to join me on a journey of discovery and to enjoy the adventure of always learning.</p>
-                </div>
+    <!-- Experience & Mission -->
+    <section class="story-section">
+      <div class="container">
+        <div class="story-content">
+          <div class="chapter-number">04</div>
+          <h2 class="heading mb-4">Staying <span class="purple-accent h2">driven</span></h2>
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+              <p class="fs-5">
+                Besides studying and creating, I also started working. I began in a pet store as an assistant, and later worked as a bike courier for a while. Now I work as a student project assistant at the University of Amsterdam, where I can use my organizational skills and creativity. As a runner, I've learned that you have to keep challenging yourself to grow. This helps me to always take on new challenges.
+              </p>
             </div>
+            <div class="col-lg-6">
+              <!-- Placeholder voor een hardloopfoto -->
+              <img src="/static/image/hardlopen.jpg" class="story-image img-fluid" alt="Hardlopen (placeholder)">
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="footer">
+    <!-- The Purple Philosophy -->
+    <section class="story-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="/static/image/be-purple.jpg" class="story-image img-fluid" alt="Paars zijn">
+          </div>
+          <div class="col-lg-6 story-content">
+            <div class="chapter-number">05</div>
+            <h2 class="heading mb-4">Be <span class="purple-accent h2">purple</span> where others are blue!</h2>
+            <p class="fs-5">
+              Maybe you noticed: I love to think differently sometimes, stay curious, and not be afraid to try new things. That's what 'being purple' means to me.
+            </p>
+            <div class="quote-section">
+              Being purple is being curious, and daring to think just a little differently
+            </div>
+            <p class="fs-5">
+              In webdesign unvisited links are blue. But as soon as you click them, they turn purple. For me this symbolises the moment you learn something new, dare to explore, and dare to learn. With everything I create, from code to content, I want to show people how beautiful it is to be curious. Learning never stops, there is always more to discover.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="floating-shape" style="top: 20%; right: 5%;">
+        <img src="/static/shape/bc-cir.png" width="80" alt="">
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="story-content">
+          <h2 class="display-5 mb-4">Ready to make purple links together?</h2>
+          <p class="fs-5 mb-4" style="text-align: center; color: white;">Let's start a conversation about your project, challenge, or just interesting ideas.</p>
+          <button type="button" class="cta-button btn btn-lg" onclick="window.location.href='contact';">Link with me</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keep original footer -->
+<div class="footer">
           <div class="footer-row row row-cols-1 row-cols-lg-4">
             <div class="col">
               <img draggable="false" (dragstart)="false;" src="/static/logo/logo-glossary.png" class="topnav-image unselectable center-img" width="200" >
@@ -143,8 +440,28 @@
           </div>
         </div>
       </div>
-        <script src="/script.js"></script> 
-        <script>
+
+    <script src="/script.js"></script>
+    
+    <script>
+      // Intersection Observer for story animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+      document.querySelectorAll('.story-content').forEach(el => {
+        observer.observe(el);
+      });
+      document.querySelectorAll('.floating-shape').forEach((shape, index) => {
+        shape.style.animationDelay = `${index * 2}s`;
+      });
       // Hamburger menu JS
       const hamburger = document.getElementById('hamburger');
       const navMenu = document.getElementById('nav-menu');
@@ -153,5 +470,5 @@
         hamburger.classList.toggle('active');
       });
     </script>
-      </body>
-    </html>
+  </body>
+</html>

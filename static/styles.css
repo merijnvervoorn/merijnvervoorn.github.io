@@ -740,6 +740,26 @@ p {
   color: var(--secondary);
 }
 
+/* Footer logo responsive fix */
+.footer-row .topnav-image.center-img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer logo responsive fix (force aspect ratio on mobile) */
+@media (max-width: 600px) {
+  .footer-row .topnav-image.center-img {
+    max-width: 120px;
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    max-height: none !important;
+  }
+}
+
 /* --- Base styles --- */
 .topnav {
   background: #fff;
