@@ -839,6 +839,7 @@ p {
 
   .hamburger {
     display: flex;
+    margin-right: 10px;
   }
 
   .topnav-image {
@@ -875,5 +876,41 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+}
+/* Project card responsive styling */
+@media (max-width: 768px) {
+  .projects-div {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .project-card {
+    max-width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 1.2rem 0.8rem;
+  }
+  .project-card-first-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .project-card-title {
+    font-size: 2rem !important;
+  }
+  .project-card-images {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .project-card-image {
+    max-width: 100vw;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    display: block;
+    border-radius: 12px;
   }
 }
