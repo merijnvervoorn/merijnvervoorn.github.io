@@ -536,7 +536,6 @@ p {
 
 /* Contact */
 .contact {
-  background-image: url("image/contact-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
@@ -547,53 +546,139 @@ p {
 }
 
 /* About Page */
-.about-me {
-  margin-top: 5rem;
-  text-align: center;
-  color: var(--secondary);
-}
 
-.introduction-title {
-  color: var(--accent);
-}
+      .story-section {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 5rem;
+      }
+      
+      .story-content {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+      }
+      
+      .story-content.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .floating-shape {
+        position: absolute;
+        opacity: 0.1;
+        animation: float 6s ease-in-out infinite;
+        pointer-events: none;
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(180deg); }
+      }
+      
+      .chapter-number {
+        font-size: 8rem;
+        font-weight: 100;
+        color: rgba(108, 117, 125, 0.1);
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        z-index: -1;
+        font-family: 'Unbounded', cursive;
+      }
+      
+      .story-image {
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .story-image:hover {
+        transform: translateY(-10px) rotate(2deg);
+      }
+      
+      .purple-accent {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .cta-section {
+        text-align: center;
+        padding: 4rem 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 30px;
+        color: white;
+        margin: 4rem 0;
+        max-width: 1250px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
 
-.introduction-title2 {
-  color: var(--primary);
-}
+      }
+      
+      .cta-button {
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 1rem 3rem;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+      }
+      
+      .cta-button:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      }
+      
+      .quote-section {
+        font-style: italic;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 3rem 0;
+        position: relative;
+      }
+      
+      .quote-section::before,
+      .quote-section::after {
+        content: '"';
+        font-size: 4rem;
+        color: rgba(103, 126, 234, 0.3);
+        position: absolute;
+        font-family: serif;
+      }
+      
+      .quote-section::before {
+        top: 0;
+        left: 2rem;
+      }
+      
+      .quote-section::after {
+        bottom: 0;
+        right: 2rem;
+      }
 
-.ambition {
-  text-align: center;
-}
-
-.ambition-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 15%;
-}
-
-.ambition-head {
-  color: var(--secondary);
-  font-weight: 600;
-}
-
-.ambition-head2 {
-  color: var(--secondary);
-  font-weight: 600;
-}
-
-.ambition-text {
-  color: var(--git-black);
-}
-
-.contact-container {
-  text-align: center;
-  color: var(--primary);
-}
-
-.wees-paars-explanation {
-  color: var(--secondary);
-}
-
+      @media (max-width: 768px) {
+        .chapter-number {
+          font-size: 4rem;
+        }
+        .heading {
+          font-size: 2rem !important;
+        }
+        .heading .purple-accent, .heading.purple-accent {
+          font-size: 2rem !important;
+        }
+      }
+      
 
 /* Contact Page */
 .contact {

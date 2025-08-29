@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Create shapes at fixed positions
     const shapes = [
-        Bodies.circle(containerWidth / 6, containerHeight / 4, 70, { restitution: 0.9, render: { fillStyle: '#F58A07' } }),
+        Bodies.circle(containerWidth / 6, containerHeight / 4, 70, { restitution: 0.9, render: { fillStyle: '#928DF7' } }),
         Bodies.rectangle(containerWidth / 9, containerHeight / 2, 120, 120, { restitution: 0.9, render: { fillStyle: '#2E294E' } }),
-        Bodies.polygon(containerWidth / 4, containerHeight * 3 / 4, 3, 80, { restitution: 0.9, render: { fillStyle: '#928DF7' } })
+        Bodies.polygon(containerWidth / 4, containerHeight * 3 / 4, 3, 80, { restitution: 0.9, render: { fillStyle: '#F58A07' } })
 
     ];
     World.add(world, shapes);
@@ -112,3 +112,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+      // Intersection Observer for story animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+      document.querySelectorAll('.story-content').forEach(el => {
+        observer.observe(el);
+      });
+      document.querySelectorAll('.floating-shape').forEach((shape, index) => {
+        shape.style.animationDelay = `${index * 2}s`;
+      });
+
+      
+      // Hamburger menu JS
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('nav-menu');
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+        hamburger.classList.toggle('active');
+      });
