@@ -258,29 +258,25 @@
   </head>
 
   <body class="body">
-    <!-- Keep original header -->
-<div class="topnav">
-  <header class="header d-flex flex-wrap py-2 mb-4">
-    <a draggable="false" href="/" class="unselectable d-flex me-md-auto topnav-image">
-      <img draggable="false" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
-    </a>
-
-    <!-- Hamburger button for mobile -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="topnav">
+      <header class="header d-flex flex-wrap py-2 mb-4">
+        <a draggable="false" href="/" class="unselectable d-flex me-md-auto topnav-image">
+          <img draggable="false" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
+        </a>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav nav-pills" id="nav-menu">
+          <li class="nav-item"><a href="/" class="nav-link nav-animate" data-splitting>Home</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link nav-link-active">Over</a></li>
+          <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" target="_blank" class="nav-link nav-animate" data-splitting>Nieuwsbrief</a></li>
+          <li class="nav-item"><a href="/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
+          <li class="nav-item"><a href="/en/about" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
+        </ul>
+      </header>
     </div>
-
-    <ul class="nav nav-pills" id="nav-menu">
-      <li class="nav-item"><a href="/" class="nav-link nav-animate">Home</a></li>
-      <li class="nav-item"><a href="/about" class="nav-link nav-link-active">Over</a></li>
-      <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" target="_blank" class="nav-link nav-animate">Nieuwsbrief</a></li>
-      <li class="nav-item"><a href="/contact" class="nav-link nav-animate">Contact</a></li>
-      <li class="nav-item"><a href="/en/about" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
-    </ul>
-  </header>
-</div>
 
 
     <!-- Hero Introduction -->
@@ -432,7 +428,6 @@
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
       };
-
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -440,27 +435,19 @@
           }
         });
       }, observerOptions);
-
-      // Observe all story content elements
       document.querySelectorAll('.story-content').forEach(el => {
         observer.observe(el);
       });
-
-      // Add floating animation delay to shapes
       document.querySelectorAll('.floating-shape').forEach((shape, index) => {
         shape.style.animationDelay = `${index * 2}s`;
       });
-
-
-
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('nav-menu');
-
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-  });
-
-
+      // Hamburger menu JS
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('nav-menu');
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+        hamburger.classList.toggle('active');
+      });
     </script>
   </body>
 </html>

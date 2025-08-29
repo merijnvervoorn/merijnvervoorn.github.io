@@ -136,17 +136,20 @@
   <body class="body">
     <div class="topnav">
       <header class="header d-flex flex-wrap py-2 mb-4">
-        <a draggable="false" (dragstart)="false;" href="/" class="unselectable d-flex me-md-auto topnav-image">
-          <img draggable="false" (dragstart)="false;" src="/static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
-          <!-- <h1 draggable="false" (dragstart)="false;" class="unselectable heading topnav-text">Merijn Vervoorn</h1> -->
+        <a draggable="false" href="/" class="unselectable d-flex me-md-auto topnav-image">
+          <img draggable="false" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
         </a>
-  
-        <ul class="nav nav-pills">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav nav-pills" id="nav-menu">
           <li class="nav-item"><a href="/" class="nav-link nav-animate" data-splitting>Home</a></li>
           <li class="nav-item"><a href="/about" class="nav-link nav-animate" data-splitting>Over</a></li>
           <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" target="_blank" class="nav-link nav-animate" data-splitting>Nieuwsbrief</a></li>
           <li class="nav-item"><a href="/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
-          <li class="nav-item"><a draggable="false" (dragstart)="false;" href="/en/projects/linus" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
+          <li class="nav-item"><a href="/en/projects" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
         </ul>
       </header>
     </div>
@@ -217,6 +220,14 @@
       </div>
     </div>
     <script src="/script.js"></script> 
-
+    <script>
+      // Hamburger menu JS
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('nav-menu');
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+        hamburger.classList.toggle('active');
+      });
+    </script>
   </body>
 </html>

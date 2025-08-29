@@ -742,7 +742,7 @@ p {
 
 /* --- Base styles --- */
 .topnav {
-  background: #fff; /* adjust to your theme */
+  background: #fff;
   position: relative;
   z-index: 1000;
 }
@@ -768,21 +768,34 @@ p {
   width: 2rem;
   height: 2rem;
   gap: 5px;
+  z-index: 1100;
 }
 
 .hamburger span {
   display: block;
   height: 3px;
   width: 100%;
-  background: #333; /* color of the lines */
+  background: #333;
   border-radius: 3px;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
-/* --- Hide nav on mobile --- */
+/* --- Hamburger active (X animation) --- */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* --- Mobile nav --- */
 @media (max-width: 768px) {
   .nav {
-    display: none;
     flex-direction: column;
     background: #fff;
     position: absolute;
@@ -791,10 +804,17 @@ p {
     left: 0;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    /* hidden by default */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
   }
 
   .nav.show {
-    display: flex;
+    max-height: 500px; /* large enough to fit all links */
+    opacity: 1;
   }
 
   .hamburger {
