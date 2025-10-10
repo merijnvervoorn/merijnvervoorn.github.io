@@ -763,15 +763,42 @@ p {
   margin-top: 1rem;
 }
 
-.project-card-image {
+/* Make picture elements behave like images for project cards */
+.project-card-images picture {
   width: 48%;
   border-radius: 15px;
   border: 3px solid var(--bg);
-  object-fit: cover;
   margin-bottom: -3rem;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.project-card-image {
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  object-fit: cover;
   transition: transform 0.5s ease-in-out;
 }
 
+/* Apply rotations to picture elements */
+.project-card-images picture:nth-of-type(1) {
+  transform: rotate(-2deg);
+}
+
+.project-card-images picture:nth-of-type(2) {
+  transform: rotate(5deg);
+}
+
+.project-card:hover .project-card-images picture:nth-of-type(1) {
+  transform: scale(1.07) rotate(-5deg);
+}
+
+.project-card:hover .project-card-images picture:nth-of-type(2) {
+  transform: scale(1.07) rotate(3deg);
+}
+
+/* Legacy support for direct images (fallback) */
 .project-card-image:nth-of-type(1) {
   transform: rotate(-2deg);
 }
