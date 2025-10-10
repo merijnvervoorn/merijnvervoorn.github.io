@@ -25,8 +25,10 @@
       <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
       <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
       <script defer src="https://cloud.umami.is/script.js" data-website-id="1a61f729-43e1-4b1e-afe6-883487b48bd0"></script>
+      <script src="/static/image-optimizer.js"></script>
+  </head>
 
     <style>
       /* Enhanced Story-driven Styles */
@@ -264,7 +266,10 @@
     <div class="topnav">
       <header class="header d-flex flex-wrap py-2 mb-4">
         <a draggable="false" href="/" class="unselectable d-flex me-md-auto topnav-image">
-          <img draggable="false" src="/static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
+          <picture>
+            <source srcset="/static/logo/optimized/logo-zen-200.webp" type="image/webp">
+            <img draggable="false" src="/static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34" loading="eager">
+          </picture>
         </a>
         <div class="hamburger" id="hamburger">
           <span></span>

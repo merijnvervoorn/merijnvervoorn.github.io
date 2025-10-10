@@ -27,13 +27,17 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
       <script defer src="https://cloud.umami.is/script.js" data-website-id="1a61f729-43e1-4b1e-afe6-883487b48bd0"></script>
+      <script src="/static/image-optimizer.js"></script>
   </head>
 
   <body class="body">
     <div class="topnav">
       <header class="header d-flex flex-wrap py-2 mb-4">
         <a draggable="false" href="/" class="unselectable d-flex me-md-auto topnav-image">
-          <img draggable="false" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
+          <picture>
+            <source srcset="/static/logo/optimized/logo-zen-200.webp" type="image/webp">
+            <img draggable="false" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34" loading="eager">
+          </picture>
         </a>
         <div class="hamburger" id="hamburger">
           <span></span>
@@ -68,7 +72,7 @@
               <div class="contact-form col-lg-8">
                 <div class="d-flex">
                   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScebB12-twGG1ZwRQz0mkMq8-WSFXex6I-CD4ex0xjJa48PFw/viewform?embedded=true" width="100%" height="820" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                  <img src="/static/image/emoji-suit.png" class="d-block ms-3" alt="Contact" height="650" loading="lazy">
+                  <picture><source srcset="/static/image/optimized/emoji-suit-800.webp" type="image/webp"><img src="/static/image/emoji-suit.png" class="d-block ms-3" alt="Contact" height="650" loading="lazy"></picture>
                 </div>
               </div>
             </div>
@@ -76,13 +80,13 @@
         </div>
         
       <div class="floating-shape" style="top: 40%; left: 5%;">
-        <img src="/static/shape/bl-sq.png" width="80" alt="">
+        <picture><source srcset="/static/shape/optimized/bl-sq-200.webp" type="image/webp"><img src="/static/shape/bl-sq.png" width="80" alt="" loading="lazy"></picture>
       </div>              
       <div class="floating-shape" style="top: 43%; left: 13%;">
-        <img src="/static/shape/yo-cir.png" width="80" alt="">
+        <img src="/static/shape/yo-cir.png" width="80" alt="" loading="lazy"></picture>
       </div>
       <div class="floating-shape" style="top: 48%; left: 7%;">
-        <img src="/static/shape/pc-tri.png" width="80" alt="">
+        <img src="/static/shape/pc-tri.png" width="80" alt="" loading="lazy"></picture>
       </div>
 
         <div class="footer">

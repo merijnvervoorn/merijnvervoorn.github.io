@@ -25,8 +25,10 @@
       <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
       <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
       <script defer src="https://cloud.umami.is/script.js" data-website-id="1a61f729-43e1-4b1e-afe6-883487b48bd0"></script>
+      <script src="/static/image-optimizer.js"></script>
+  </head>
 
     <style>
       /* Enhanced Story-driven Styles */
@@ -38,7 +40,10 @@
     <div class="topnav">
       <header class="header d-flex flex-wrap py-2 mb-4">
         <a draggable="false" href="/" class="unselectable d-flex me-md-auto topnav-image">
-          <img draggable="false" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
+          <picture>
+            <source srcset="/static/logo/optimized/logo-zen-200.webp" type="image/webp">
+            <img draggable="false" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34" loading="eager">
+          </picture>
         </a>
         <div class="hamburger" id="hamburger">
           <span></span>
@@ -66,12 +71,18 @@
             <p class="lead">Geboren in Zoeterwoude, een dorpje tussen Leiden en Zoetermeer. Van jongs af aan was ik al nieuwsgierig, en vond ik het leuk om nét even anders te denken dan de rest. De ene week wilde ik astronaut worden, dan weer goochelaar. Een week later maakte ik stop-motion films met Gogo's (die poppetjes van de C1000). Al vroeg was ik bezig met mezelf creatief uiten. Elke dag was een moment om iets nieuws te leren.</p>
           </div>
           <div class="col-lg-6">
-            <img src="/static/image/introduction.jpg" class="story-image img-fluid" alt="Merijn Vervoorn">
+            <picture>
+              <source srcset="/static/image/optimized/introduction-800.webp" type="image/webp">
+              <img src="/static/image/introduction.jpg" class="story-image img-fluid" alt="Merijn Vervoorn" loading="lazy">
+            </picture>
           </div>
         </div>
       </div>
       <div class="floating-shape" style="top: 10%; right: 10%;">
-        <img src="/static/shape/pl-sq.png" width="100" alt="">
+        <picture>
+          <source srcset="/static/shape/optimized/pl-sq-200.webp" type="image/webp">
+          <img src="/static/shape/pl-sq.png" width="100" alt="" loading="lazy">
+        </picture>
       </div>
     </section>
 
@@ -80,7 +91,10 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <img src="/static/image/first-youtube.png" class="story-image img-fluid" alt="eerste video">
+            <picture>
+              <source srcset="/static/image/optimized/first-youtube-800.webp" type="image/webp">
+              <img src="/static/image/first-youtube.png" class="story-image img-fluid" alt="eerste video" loading="lazy">
+            </picture>
             <p style="color: gray; font-size: 0.8rem;">Disclaimer: Nagemaakt met behulp van ChatGPT</p>
           </div>
           <div class="col-lg-6 story-content">
@@ -93,7 +107,10 @@
         </div>
       </div>
       <div class="floating-shape" style="bottom: 10%; left: 10%;">
-        <img src="/static/shape/yl-tri.png" width="120" alt="">
+        <picture>
+          <source srcset="/static/shape/optimized/yl-tri-200.webp" type="image/webp">
+          <img src="/static/shape/yl-tri.png" width="120" alt="" loading="lazy">
+        </picture>
       </div>
     </section>
 
@@ -109,7 +126,10 @@
             </div>
             <div class="col-lg-5">
               <!-- Placeholder voor een foto van een project of podcast -->
-              <img src="/static/image/speech.jpg" class="story-image img-fluid" alt="Projectfoto (placeholder)">
+              <picture>
+                <source srcset="/static/image/optimized/speech-800.webp" type="image/webp">
+                <img src="/static/image/speech.jpg" class="story-image img-fluid" alt="Projectfoto (placeholder)" loading="lazy">
+              </picture>
             </div>
           </div>
         </div>
@@ -128,7 +148,10 @@
             </div>
             <div class="col-lg-6">
               <!-- Placeholder voor een hardloopfoto -->
-              <img src="/static/image/hardlopen.jpg" class="story-image img-fluid" alt="Hardlopen (placeholder)">
+              <picture>
+                <source srcset="/static/image/optimized/hardlopen-800.webp" type="image/webp">
+                <img src="/static/image/hardlopen.jpg" class="story-image img-fluid" alt="Hardlopen (placeholder)" loading="lazy">
+              </picture>
             </div>
           </div>
         </div>
@@ -140,7 +163,10 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <img src="/static/image/be-purple.jpg" class="story-image img-fluid" alt="Paars zijn">
+            <picture>
+              <source srcset="/static/image/optimized/be-purple-800.webp" type="image/webp">
+              <img src="/static/image/be-purple.jpg" class="story-image img-fluid" alt="Paars zijn" loading="lazy">
+            </picture>
           </div>
           <div class="col-lg-6 story-content">
             <div class="chapter-number">05</div>
@@ -152,7 +178,10 @@
         </div>
       </div>
       <div class="floating-shape" style="top: 20%; right: 5%;">
-        <img src="/static/shape/bc-cir.png" width="80" alt="">
+        <picture>
+          <source srcset="/static/shape/optimized/bc-cir-200.webp" type="image/webp">
+          <img src="/static/shape/bc-cir.png" width="80" alt="" loading="lazy">
+        </picture>
       </div>
     </section>
 
@@ -171,7 +200,10 @@
     <div class="footer">
       <div class="footer-row row row-cols-1 row-cols-lg-4">
         <div class="col">
-          <img draggable="false" (dragstart)="false;" src="/static/logo/logo-glossary.png" class="topnav-image unselectable center-img" width="200" >
+          <picture>
+            <source srcset="/static/logo/optimized/logo-glossary-400.webp" type="image/webp">
+            <img draggable="false" (dragstart)="false;" src="/static/logo/logo-glossary.png" class="topnav-image unselectable center-img" width="200" loading="lazy">
+          </picture>
         </div>
         <div class="col">
           <p class="footer-head heading">Merijn Vervoorn</p>
