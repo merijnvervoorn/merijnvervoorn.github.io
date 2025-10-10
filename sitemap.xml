@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<!-- Root pages -->
+<url>
+  <loc>https://merijnvervoorn.com/</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/about</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/contact</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Projects section -->
+<url>
+  <loc>https://merijnvervoorn.com/projects</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/projects/coalitie-voorspeller</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/projects/citroenogen</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/projects/linus</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/projects/dodge</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/projects/roaddanger</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/projects/worldometer</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<!-- Other directories -->
+<url>
+  <loc>https://merijnvervoorn.com/anglereader</loc>
+  <lastmod>2025-08-01T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/citroenogen/</loc>
+  <lastmod>2025-08-02T13:16:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/coalitie-voorspeller</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/coalitie-voorspeller/index.html</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/coalitie-voorspeller/builder.html</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/dodge/</loc>
+  <lastmod>2025-08-02T13:17:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/dodge/index.html</loc>
+  <lastmod>2025-08-02T13:17:13+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/dodge/spend.html</loc>
+  <lastmod>2025-08-02T13:17:13+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/dodge/game.html</loc>
+  <lastmod>2025-08-02T13:17:13+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/dodge/about.html</loc>
+  <lastmod>2025-08-02T13:17:13+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/islandtm</loc>
+  <lastmod>2025-02-13T12:29:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/linus/</loc>
+  <lastmod>2025-08-30T15:04:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/search</loc>
+  <lastmod>2025-08-28T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<!-- English section (/en) -->
+<url>
+  <loc>https://merijnvervoorn.com/en/</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/en/index</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/en/about</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/en/contact</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/en/projects</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/en/projects/coalition-predictor</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/en/projects/citroenogen</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/en/projects/linus</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/en/projects/dodge</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/en/projects/roaddanger</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://merijnvervoorn.com/en/projects/worldometer</loc>
+  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+</urlset>
