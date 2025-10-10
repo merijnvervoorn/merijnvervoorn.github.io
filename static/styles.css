@@ -509,6 +509,12 @@ p {
   animation: pan-background 50s ease-in-out infinite;
 }
 
+/* WebP version for modern browsers */
+.webp .newsletter {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.919), rgba(255, 255, 255, 0.684), rgba(255, 255, 255, 0)), 
+                    url("image/optimized/mrt-bg-1200.webp");
+}
+
 @keyframes pan-background {
   0% { background-position: 0% 0%; }
   50% { background-position: 0% 100%; }

@@ -14,6 +14,15 @@
         return canvas.toDataURL('image/webp').indexOf('webp') !== -1;
     }
     
+    // Add WebP class to html element for CSS targeting
+    function addWebPClass() {
+        if (supportsWebP()) {
+            document.documentElement.classList.add('webp');
+        } else {
+            document.documentElement.classList.add('no-webp');
+        }
+    }
+    
     // Replace image with WebP if supported
     function optimizeImage(img) {
         if (!supportsWebP()) return;
@@ -59,6 +68,10 @@
     
     // Process all images on the page
     function optimizeAllImages() {
+        // Add WebP class for CSS background images
+        addWebPClass();
+        
+        // Optimize regular img elements
         const images = document.querySelectorAll('img[src*="/static/"]');
         images.forEach(optimizeImage);
     }
