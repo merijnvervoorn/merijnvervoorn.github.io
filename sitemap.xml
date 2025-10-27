@@ -10,24 +10,24 @@
 <!-- Root pages -->
 <url>
   <loc>https://merijnvervoorn.com/</loc>
-  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <lastmod>2025-10-27T12:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://merijnvervoorn.com/about</loc>
-  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <lastmod>2025-10-27T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://merijnvervoorn.com/contact</loc>
-  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <lastmod>2025-10-27T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <!-- Projects section -->
 <url>
   <loc>https://merijnvervoorn.com/projects</loc>
-  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <lastmod>2025-10-27T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -74,9 +74,12 @@
 </url>
 <url>
   <loc>https://merijnvervoorn.com/coalitie-voorspeller/</loc>
+  <lastmod>2025-10-27T20:10:00+00:00</lastmod>
   <priority>0.64</priority>
+</url>
 <url>
   <loc>https://merijnvervoorn.com/coalitie-voorspeller/builder.html</loc>
+  <lastmod>2025-10-27T20:10:00+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
@@ -118,27 +121,27 @@
 <!-- English section (/en) -->
 <url>
   <loc>https://merijnvervoorn.com/en/</loc>
-  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <lastmod>2025-10-27T12:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://merijnvervoorn.com/en/index</loc>
-  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <lastmod>2025-10-27T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://merijnvervoorn.com/en/about</loc>
-  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <lastmod>2025-10-27T12:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://merijnvervoorn.com/en/contact</loc>
-  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <lastmod>2025-10-27T12:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://merijnvervoorn.com/en/projects</loc>
-  <lastmod>2025-09-11T12:29:34+00:00</lastmod>
+  <lastmod>2025-10-27T12:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
