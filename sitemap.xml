@@ -73,29 +73,16 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://merijnvervoorn.com/coalitie-voorspeller</loc>
-
+  <loc>https://merijnvervoorn.com/coalitie-voorspeller/</loc>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://merijnvervoorn.com/coalitie-voorspeller/index.html</loc>
-
-  <priority>0.64</priority>
-</url>
 <url>
   <loc>https://merijnvervoorn.com/coalitie-voorspeller/builder.html</loc>
-
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://merijnvervoorn.com/dodge/</loc>
   <lastmod>2025-08-02T13:17:13+00:00</lastmod>
   <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://merijnvervoorn.com/dodge/index.html</loc>
-  <lastmod>2025-08-02T13:17:13+00:00</lastmod>
-  <priority>0.41</priority>
 </url>
 <url>
   <loc>https://merijnvervoorn.com/dodge/spend.html</loc>
