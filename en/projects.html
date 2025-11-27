@@ -44,8 +44,7 @@
         <ul class="nav nav-pills" id="nav-menu">
           <li class="nav-item"><a href="/en" class="nav-link nav-animate" data-splitting>Home</a></li>
           <li class="nav-item"><a href="/en/about" class="nav-link nav-animate" data-splitting>About</a></li>
-          <li class="nav-item"><a href="https://tijdsaanduiding.merijnvervoorn.com" target="_blank" class="nav-link nav-animate" data-splitting>Newsletter</a></li>
-          <li class="nav-item"><a href="/en/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
+          <li class="nav-item"><a href="/en/projects" class="nav-link nav-link-active" data-splitting>Projects</a></li>
           <li class="nav-item"><a href="/projects" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
         </ul>
       </header>
@@ -77,8 +76,16 @@
             This project is a group assignment for my BSc Computational Social Science.
           </p>
           <div class="project-card-images">
-            <img class="project-card-image" src="/static/projects/coalitie-voorspeller-logos.png" alt="Coalition Predictor">
-            <img class="project-card-image" src="/static/projects/coalition-predictor-hero-mock.png" alt="Coalition Predictor">
+            <picture>
+              <source srcset="/static/projects/optimized/coalitie-voorspeller-hero-mock-800.webp" type="image/webp">
+              <source srcset="/static/projects/optimized/coalitie-voorspeller-hero-mock-800.jpg" type="image/jpeg">
+              <img class="project-card-image" src="/static/projects/coalitie-voorspeller-hero-mock.png" alt="coalitie voorspeller" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="/static/projects/optimized/coalitie-voorspeller-logos-800.webp" type="image/webp">
+              <source srcset="/static/projects/optimized/coalitie-voorspeller-logos-800.jpg" type="image/jpeg">
+              <img class="project-card-image" src="/static/projects/coalitie-voorspeller-logos.png" alt="coalitie voorspeller" loading="lazy">
+            </picture>
           </div>
         </div>
 
@@ -100,31 +107,19 @@
             This project is a collaboration with BRIL Amsterdam, during my BSc Computational Social Science.
           </p>
           <div class="project-card-images">
-            <img class="project-card-image" src="/static/projects/citroenogen-logos.png" alt="Lemon Eyes">
-            <img class="project-card-image" src="/static/projects/citroenogen-hero-mock.png" alt="Lemon Eyes">
+            <picture>
+              <source srcset="/static/projects/optimized/citroenogen-logos-800.webp" type="image/webp">
+              <img class="project-card-image" src="/static/projects/citroenogen-logos.png" alt="Citroenogen" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="/static/projects/optimized/citroenogen-hero-mock-800.webp" type="image/webp">
+              <source srcset="/static/projects/optimized/citroenogen-hero-mock-800.jpg" type="image/jpeg">
+              <img class="project-card-image" src="/static/projects/citroenogen-hero-mock.png" alt="Citroenogen" loading="lazy">
+            </picture>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-card-first-line">
-            <div>
-              <h2 class="project-card-title">DODGE</h2>
-            </div>
-            <div>
-              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg> 
-            </div>
-          </div>
-          <a href="/en/projects/dodge"><span class="card-link"></span></a>
-          <p class="project-card-explain">
-            Parody on the page of the Department of Government Efficiency (DOGE) with Dutch data (Department of Dutch Government Efficiency).
-          </p>
-          <div class="project-card-images">
-            <img class="project-card-image" src="/static/projects/dodge-hero-mock.png" alt="DODGE">
-            <img class="project-card-image" src="/static/projects/dodge-logos.png" alt="DODGE">
-          </div>
-        </div>
-
-        <div class="project-card">
+                <div class="project-card">
           <div class="project-card-first-line">
             <div>
               <h2 class="project-card-title">LINUS</h2>
@@ -138,8 +133,64 @@
             A script to easily set up a new installation of Linux.
           </p>
           <div class="project-card-images">
-            <img class="project-card-image" src="/static/projects/linus-hero-mock.png" alt="Linus">
-            <img class="project-card-image" src="/static/projects/linus-logos.png" alt="Linus">
+            <picture>
+              <source srcset="/static/projects/optimized/linus-hero-mock-800.webp" type="image/webp">
+              <source srcset="/static/projects/optimized/linus-hero-mock-800.jpg" type="image/jpeg">
+              <img class="project-card-image" src="/static/projects/linus-hero-mock.png" alt="Linus" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="/static/projects/optimized/linus-logos-800.webp" type="image/webp">
+              <img class="project-card-image" src="/static/projects/linus-logos.png" alt="Linus" loading="lazy">
+            </picture>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-first-line">
+            <div>
+              <h2 class="project-card-title">AngleReader</h2>
+            </div>
+            <div>
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg> 
+            </div>
+          </div>
+          <a href="/en/projects/anglereader"><span class="card-link"></span></a>
+          <p class="project-card-explain">
+            AngleReader is a web tool designed to tilt text and PDF documents, specifically developed for people with visual impairments such as hemianopsia.
+          </p>
+          <div class="project-card-images">
+            <picture>
+              <img class="project-card-image" src="/static/projects/anglereader-hero-mock.png" alt="AngleReader" loading="lazy">
+            </picture>
+            <picture>
+              <img class="project-card-image" src="/static/projects/anglereader-showcase.png" alt="AngleReader" loading="lazy">
+            </picture>
+          </div>
+        </div>
+
+                <div class="project-card">
+          <div class="project-card-first-line">
+            <div>
+              <h2 class="project-card-title">DODGE</h2>
+            </div>
+            <div>
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg> 
+            </div>
+          </div>
+          <a href="/en/projects/dodge"><span class="card-link"></span></a>
+          <p class="project-card-explain">
+            Parody on the page of the Department of Government Efficiency (DOGE) with Dutch data (Department of Dutch Government Efficiency).
+          </p>
+          <div class="project-card-images">
+            <picture>
+              <source srcset="/static/projects/optimized/dodge-hero-mock-800.webp" type="image/webp">
+              <source srcset="/static/projects/optimized/dodge-hero-mock-800.jpg" type="image/jpeg">
+              <img class="project-card-image" src="/static/projects/dodge-hero-mock.png" alt="DODGE" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="/static/projects/optimized/dodge-logos-800.webp" type="image/webp">
+              <img class="project-card-image" src="/static/projects/dodge-logos.png" alt="DODGE" loading="lazy">
+            </picture>
           </div>
         </div>
 
@@ -160,10 +211,18 @@
             This project is a collaboration with Roaddanger.org, during my BSc Computational Social Science.
           </p>
           <div class="project-card-images">
-            <img class="project-card-image" src="/static/projects/roaddanger-hero-mock.png" alt="Roaddanger">
-            <img class="project-card-image" src="/static/projects/roaddanger-logos.png" alt="Roaddanger">
+            <picture>
+              <source srcset="/static/projects/optimized/roaddanger-hero-mock-800.webp" type="image/webp">
+              <source srcset="/static/projects/optimized/roaddanger-hero-mock-800.jpg" type="image/jpeg">
+              <img class="project-card-image" src="/static/projects/roaddanger-hero-mock.png" alt="Roaddanger" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="/static/projects/optimized/roaddanger-logos-800.webp" type="image/webp">
+              <img class="project-card-image" src="/static/projects/roaddanger-logos.png" alt="Roaddanger" loading="lazy">
+            </picture>
           </div>
         </div>
+
 
         <div class="project-card">
           <div class="project-card-first-line">
@@ -182,14 +241,100 @@
             This project was an assignment for my BSc Computational Social Science.
           </p>
           <div class="project-card-images">
-            <img class="project-card-image" src="/static/projects/worldometer-hero-mock.png" alt="Worldometer">
-            <img class="project-card-image" src="/static/projects/worldometer-logos.png" alt="Worldometer">
+            <picture>
+              <source srcset="/static/projects/optimized/worldometer-hero-mock-800.webp" type="image/webp">
+              <source srcset="/static/projects/optimized/worldometer-hero-mock-800.jpg" type="image/jpeg">
+              <img class="project-card-image" src="/static/projects/worldometer-hero-mock.png" alt="Worldometer" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="/static/projects/optimized/worldometer-logos-800.webp" type="image/webp">
+              <img class="project-card-image" src="/static/projects/worldometer-logos.png" alt="Worldometer" loading="lazy">
+            </picture>
           </div>
         </div>
 
-
       </div>
     </div>
+
+  <div class="solutions" style="padding-top: 5rem; text-align: center;">
+    <h2 class="hero-purple">Vibe-Code Builds</h2>
+    <p style="max-width: 800px; margin: 0 auto; padding: 1rem 2rem;">
+      These projects are largely made with AI (Vibe-coding). Some out of boredom, others because I was missing something in my life. 
+      They are quick experiments that show what's possible with modern tools.
+    </p>
+  </div>
+
+  <div style="padding: 2rem 0;">
+    <div class="projects-div" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
+      
+      <div class="project-card" style="padding: 1.5rem;">
+        <picture>
+          <img src="/static/projects/pomodoro-hero.png" alt="Pomodoro" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+        </picture>
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Pomodoro Timer</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+          A minimalist and distraction-free Pomodoro timer, designed to improve your focus and make study or work sessions more effective.
+        </p>
+        <a href="https://merijn.cc/pomodoro" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
+      </div>
+
+      <div class="project-card" style="padding: 1.5rem;">
+        <picture>
+          <img src="/static/projects/search-hero.png" alt="Bookmarks/New Tab Page" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+        </picture>
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Bookmarks/New Tab Page</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+          A new tab page to quickly access my favorite websites.
+        </p>
+        <a href="https://merijnvervoorn.com/search" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
+      </div>
+
+      <div class="project-card" style="padding: 1.5rem;">
+        <picture>
+          <img src="/static/projects/watermerk-hero.png" alt="Watermerk" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+        </picture>
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Watermerk</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+          A website where I can rate water, inspired by the Untappd app.
+        </p>
+        <a href="https://merijnvervoorn.com/watermerk" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
+      </div>
+
+      <div class="project-card" style="padding: 1.5rem;">
+        <picture>
+          <img src="/static/projects/dice-hero.png" alt="Dice" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+        </picture>
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Dice Roller</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+          A simple dice simulator for rolling virtual dice.
+        </p>
+        <a href="https://merijn.cc/dice" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
+      </div>
+
+      <div class="project-card" style="padding: 1.5rem;">
+        <picture>
+          <img src="/static/projects/gamewheel-hero.png" alt="Game Wheel" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+        </picture>
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Game Wheel</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+          A wheel of fortune to randomly choose a game to play, loaded with all my board games.
+        </p>
+        <a href="https://merijn.cc/game-wheel" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
+      </div>
+
+      <div class="project-card" style="padding: 1.5rem;">
+        <picture>
+          <img src="/static/projects/xxiwq-hero.png" alt="XXIWQ" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+        </picture>
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">XXIWQ</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+          XXIWQ is an online version of the score sheets for a well-known dice game.
+        </p>
+        <a href="https://merijn.cc/xxiwq" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
+      </div>
+
+    </div>
+  </div>
 
     <div class="footer">
       <div class="footer-row row row-cols-1 row-cols-lg-4">

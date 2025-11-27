@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- SEO & Meta-->
-    <title>Dodge - Merijn Vervoorn</title>
+    <title>AngleReader - Merijn Vervoorn</title>
     <link rel="icon" type="image/x-icon" href="/static/logo/favi.png">
-    <meta name="description" content="Merijn Vervoorn is a student at the UvA. He is always looking for new things to learn and likes to share his knowledge with others. He enjoys making videos and podcasts and is always willing to help others.">
-    <meta name="keywords" content="Merijn, Vervoorn, Merijn Vervoorn">
+    <meta name="description" content="AngleReader is a web tool designed to tilt text and PDF documents, specifically developed for people with visual impairments such as hemianopsia.">
+    <meta name="keywords" content="AngleReader, Merijn Vervoorn, Hemianopsia, Reading Aid, PDF Rotation, Accessibility">
     <meta name="author" content="Merijn Vervoorn">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="alternate" hreflang="nl" href="https://merijnvervoorn.com/projects/dodge" />
+    <link rel="alternate" hreflang="nl" href="https://merijnvervoorn.com/projects/anglereader" />
 
-    <!-- Styles -->
-    <!-- CSS --><link rel="stylesheet" href="/static/styles.css">
-    <!-- Bootstrap --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- Font Awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Fonts via Google -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.g/static.com" crossorigin>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-    <!-- Animate --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- splitting -->
-      <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
       <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
       <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
@@ -30,7 +26,7 @@
 
       <style>
         :root {
-          --project-color: 248, 191, 60;
+          --project-color: 148, 132, 244; /* Adjusted to a blue 'readability' shade */
         }
 
         .hero-outline {
@@ -133,7 +129,7 @@
       </style>
   </head>
 
-      <body class="body">
+  <body class="body">
     <div class="topnav">
       <header class="header d-flex flex-wrap py-2 mb-4">
         <a draggable="false" href="/" class="unselectable d-flex me-md-auto topnav-image">
@@ -149,42 +145,41 @@
           <li class="nav-item"><a href="/en/about" class="nav-link nav-animate" data-splitting>About</a></li>
           <li class="nav-item"><a href="/en/projects" class="nav-link nav-animate" data-splitting>Projects</a></li>
           <li class="nav-item"><a href="/en/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
-          <li class="nav-item"><a href="/projects/dodge" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
+          <li class="nav-item"><a href="/projects/anglereader" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
         </ul>
       </header>
     </div>
 
 
     <div class="project">
-      <img draggable="false" (dragstart)="false;" src="/static/projects/dodge-icon.png" class="topnav-image unselectable" width="100px" loading="lazy">
-      <h2 class="hero-outline">Department of Dutch Government Efficiency</h2>
+            <img draggable="false" (dragstart)="false;" src="/static/shape/pc-cir.png" class="topnav-image unselectable" width="100px" loading="lazy">
+            <h2 class="hero-outline">AngleReader</h2>
 
-      <p class="project-explain">A parody of the page from the Department of Government Efficiency (DOGE) with Dutch data.
-        <br>
-        <br>
-        The project was created to see whether Elon has a point with his criticism of the efficiency of the American government. If so, then maybe it’s time to establish the Department of Dutch Government Efficiency. If not, then maybe we shouldn’t take Elon so seriously (if we ever did).
-        <br>
-        <br>
-        This project started as a joke, but eventually turned into a project for my fourth semester in the Bachelor's in Computational Social Science.
-      </p>
-
+            <p class="project-explain">
+              AngleReader is a web tool designed to tilt text and PDF documents, specifically developed for people with visual impairments such as hemianopsia.
+              <br>
+              <br>
+              By presenting texts at a customizable angle, AngleReader makes it possible to read more easily along the blind visual field. Everything happens locally on the user's device, so documents remain completely private and secure.
+              <br>
+              <br>
+              Features include directly rotating entered text, uploading and tilting PDF files, and an intuitive slider to precisely adjust the rotation angle.
+            </p>
               
            
             <div class="flex flex-wrap gap-2">
               <span class="tech-pill">HTML</span>
+              <span class="tech-pill">JavaScript</span>
               <span class="tech-pill">CSS</span>
-              <span class="tech-pill">Python</span>
             </div>
             <div>
-              <a class="project-button" href="https://merijnvervoorn.com/dodge" target="_blank">View project</a>
-              <a class="secondary-project-button" href="https://github.com/merijnvervoorn/dodge" target="_blank">View GitHub</a>
+              <a class="project-button" href="https://merijnvervoorn.com/anglereader/" target="_blank">View project</a>
+              <a class="secondary-project-button" href="https://github.com/merijnvervoorn/anglereader" target="_blank">View GitHub</a>
             </div>
 
 
             <div class="project-images">
-              <img draggable="false" (dragstart)="false;" src="/static/projects/dodge-hero-mock.png" class="topnav-image unselectable" width="100%" loading="lazy">
-              <img draggable="false" (dragstart)="false;" src="/static/projects/dodge-logos.png" class="topnav-image unselectable" width="100%" loading="lazy">
-              <img draggable="false" (dragstart)="false;" src="/static/projects/dodge-showcase.png" class="topnav-image unselectable" width="100%" loading="lazy">
+              <img draggable="false" (dragstart)="false;" src="/static/projects/anglereader-hero-mock.png" class="topnav-image unselectable" width="100%" loading="lazy">
+              <img draggable="false" (dragstart)="false;" src="/static/projects/anglereader-showcase.png" class="topnav-image unselectable" width="100%" loading="lazy">
             </div>
           </div>
   
