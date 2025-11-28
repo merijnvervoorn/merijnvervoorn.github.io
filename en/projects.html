@@ -44,7 +44,7 @@
         <ul class="nav nav-pills" id="nav-menu">
           <li class="nav-item"><a href="/en" class="nav-link nav-animate" data-splitting>Home</a></li>
           <li class="nav-item"><a href="/en/about" class="nav-link nav-animate" data-splitting>About</a></li>
-          <li class="nav-item"><a href="/en/projects" class="nav-link nav-link-active" data-splitting>Projects</a></li>
+          <li class="nav-item"><a href="/en/projects" class="nav-link nav-link-active">Projects</a></li>
           <li class="nav-item"><a href="/projects" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
         </ul>
       </header>
@@ -267,71 +267,83 @@
   <div style="padding: 2rem 0;">
     <div class="projects-div" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
       
-      <div class="project-card" style="padding: 1.5rem;">
-        <picture>
-          <img src="/static/projects/pomodoro-hero.png" alt="Pomodoro" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Pomodoro Timer</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          A minimalist and distraction-free Pomodoro timer, designed to improve your focus and make study or work sessions more effective.
-        </p>
-        <a href="https://merijn.cc/pomodoro" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
-      </div>
+      <a href="https://merijn.cc/pomodoro" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/pomodoro-hero.png" alt="Pomodoro" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Pomodoro Timer</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            A minimalist Pomodoro timer, designed to improve your focus and make study or work sessions more effective.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">View project →</span>
+        </div>
+      </a>
 
-      <div class="project-card" style="padding: 1.5rem;">
-        <picture>
-          <img src="/static/projects/search-hero.png" alt="Bookmarks/New Tab Page" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Bookmarks/New Tab Page</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          A new tab page to quickly access my favorite websites.
-        </p>
-        <a href="https://merijnvervoorn.com/search" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
-      </div>
+      <a href="https://merijnvervoorn.com/search" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/search-hero.png" alt="Bookmarks/New Tab Page" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Bookmarks/New Tab Page</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            A new tab page to quickly access my favorite websites.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">View project →</span>
+        </div>
+      </a>
 
-      <div class="project-card" style="padding: 1.5rem;">
-        <picture>
-          <img src="/static/projects/watermerk-hero.png" alt="Watermerk" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Watermerk</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          A website where I can rate water, inspired by the Untappd app.
-        </p>
-        <a href="https://merijnvervoorn.com/watermerk" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
-      </div>
+      <a href="https://merijnvervoorn.com/watermerk" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/watermerk-hero.png" alt="Watermerk" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Watermerk</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            A website where I can rate water, inspired by the Untappd app.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">View project →</span>
+        </div>
+      </a>
 
-      <div class="project-card" style="padding: 1.5rem;">
-        <picture>
-          <img src="/static/projects/dice-hero.png" alt="Dice" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Dice Roller</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          A simple dice simulator for rolling virtual dice.
-        </p>
-        <a href="https://merijn.cc/dice" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
-      </div>
+      <a href="https://merijn.cc/dice" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/dice-hero.png" alt="Dice" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Dice Roller</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            A simple dice simulator for rolling virtual dice.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">View project →</span>
+        </div>
+      </a>
 
-      <div class="project-card" style="padding: 1.5rem;">
-        <picture>
-          <img src="/static/projects/gamewheel-hero.png" alt="Game Wheel" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Game Wheel</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          A wheel of fortune to randomly choose a game to play, loaded with all my board games.
-        </p>
-        <a href="https://merijn.cc/game-wheel" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
-      </div>
+      <a href="https://merijn.cc/game-wheel" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/gamewheel-hero.png" alt="Game Wheel" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Game Wheel</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            A wheel of fortune to randomly choose a game to play, loaded with all my board games.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">View project →</span>
+        </div>
+      </a>
 
-      <div class="project-card" style="padding: 1.5rem;">
-        <picture>
-          <img src="/static/projects/xxiwq-hero.png" alt="XXIWQ" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">XXIWQ</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          XXIWQ is an online version of the score sheets for a well-known dice game.
-        </p>
-        <a href="https://merijn.cc/xxiwq" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">View project →</a>
-      </div>
+      <a href="https://merijn.cc/xxiwq" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/xxiwq-hero.png" alt="XXIWQ" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">XXIWQ</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            XXIWQ is an online version of the score sheets for a well-known dice game.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">View project →</span>
+        </div>
+      </a>
 
     </div>
   </div>

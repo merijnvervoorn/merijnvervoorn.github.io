@@ -44,7 +44,7 @@
         <ul class="nav nav-pills" id="nav-menu">
           <li class="nav-item"><a href="/" class="nav-link nav-animate" data-splitting>Home</a></li>
           <li class="nav-item"><a href="/about" class="nav-link nav-animate" data-splitting>Over</a></li>
-          <li class="nav-item"><a href="/projects" class="nav-link nav-link-active" data-splitting>Projecten</a></li>
+          <li class="nav-item"><a href="/projects" class="nav-link nav-link-active">Projecten</a></li>
           <li class="nav-item"><a href="/contact" class="nav-link nav-animate" data-splitting>Contact</a></li>
           <li class="nav-item"><a href="/en/projects" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
         </ul>
@@ -269,72 +269,84 @@
   <div style="padding: 2rem 0;">
     <div class="projects-div" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
       
-      <div class="project-card" style="padding: 1.5rem;">
-        <picture>
-          <img src="/static/projects/pomodoro-hero.png" alt="Pomodoro" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Pomodoro Timer</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          Een minimalistische en afleidingsvrije Pomodoro timer, ontworpen om je focus te verbeteren en studie- of werksessies effectiever te maken.
-        </p>
-        <a href="https://merijn.cc/pomodoro" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">Bekijk project →</a>
-      </div>
+      <a href="https://merijn.cc/pomodoro" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/pomodoro-hero.png" alt="Pomodoro" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Pomodoro Timer</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            Een minimalistische Pomodoro timer, ontworpen om je focus te verbeteren en studie- of werksessies effectiever te maken.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">Bekijk project →</span>
+        </div>
+      </a>
 
-      <div class="project-card" style="padding: 1.5rem;">
-                <picture>
-          <img src="/static/projects/search-hero.png" alt="Bookmarks/Nieuwe Tab Pagina" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Bookmarks/Nieuwe Tab Pagina</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          Een nieuwe tab pagina, om snel toegang te hebben tot mijn favoriete websites.
-        </p>
-        <a href="https://merijnvervoorn.com/search" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">Bekijk project →</a>
-      </div>
+      <a href="https://merijnvervoorn.com/search" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/search-hero.png" alt="Bookmarks/Nieuwe Tab Pagina" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Bookmarks/Nieuwe Tab Pagina</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            Een nieuwe tab pagina, om snel toegang te hebben tot mijn favoriete websites.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">Bekijk project →</span>
+        </div>
+      </a>
 
-      <div class="project-card" style="padding: 1.5rem;">
-                <picture>
-          <img src="/static/projects/watermerk-hero.png" alt="Watermerk" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Watermerk</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          Een website waar ik water een rating kan geven, gebaseerd op de Untappd app.
-        </p>
-        <a href="https://merijnvervoorn.com/watermerk" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">Bekijk project →</a>
-      </div>
+      <a href="https://merijnvervoorn.com/watermerk" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/watermerk-hero.png" alt="Watermerk" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Watermerk</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            Een website waar ik water een rating kan geven, gebaseerd op de Untappd app.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">Bekijk project →</span>
+        </div>
+      </a>
 
-            <div class="project-card" style="padding: 1.5rem;">
-                <picture>
-          <img src="/static/projects/dice-hero.png" alt="Dice" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Dice Roller</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          Een eenvoudige dobbelsteen simulator voor het gooien van virtuele dobbelstenen.
-        </p>
-        <a href="https://merijn.cc/dice" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">Bekijk project →</a>
-      </div>
+      <a href="https://merijn.cc/dice" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/dice-hero.png" alt="Dice" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Dice Roller</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            Een eenvoudige dobbelsteen simulator voor het gooien van virtuele dobbelstenen.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">Bekijk project →</span>
+        </div>
+      </a>
 
 
-            <div class="project-card" style="padding: 1.5rem;">
-                <picture>
-          <img src="/static/projects/gamewheel-hero.png" alt="Game Wheel" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Game Wheel</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          Een rad van fortuin om willekeurig een game te kiezen om te spelen, ingeladen met all mijn bordspellen.
-        </p>
-        <a href="https://merijn.cc/game-wheel" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">Bekijk project →</a>
-      </div>
+      <a href="https://merijn.cc/game-wheel" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/gamewheel-hero.png" alt="Game Wheel" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Game Wheel</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            Een rad van fortuin om willekeurig een game te kiezen om te spelen, ingeladen met all mijn bordspellen.
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">Bekijk project →</span>
+        </div>
+      </a>
 
-                  <div class="project-card" style="padding: 1.5rem;">
-                <picture>
-          <img src="/static/projects/xxiwq-hero.png" alt="XXIWQ" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
-        </picture>
-        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">XXIWQ</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
-          XXIWQ is een online versie van de blaadjes van een bekend dobbelspel. 
-        </p>
-        <a href="https://merijn.cc/xxiwq" style="font-size: 0.85rem; color: var(--purple); text-decoration: none;" target="_blank">Bekijk project →</a>
-      </div>
+      <a href="https://merijn.cc/xxiwq" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="project-card" style="padding: 1.5rem; cursor: pointer;">
+          <picture>
+            <img src="/static/projects/xxiwq-hero.png" alt="XXIWQ" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+          </picture>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">XXIWQ</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; word-wrap: break-word; overflow-wrap: break-word;">
+            XXIWQ is een online versie van de blaadjes van een bekend dobbelspel. 
+          </p>
+          <span style="font-size: 0.85rem; color: var(--purple); text-decoration: none;">Bekijk project →</span>
+        </div>
+      </a>
 
     </div>
   </div>
