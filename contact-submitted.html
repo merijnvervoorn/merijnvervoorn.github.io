@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <!-- SEO & Meta-->
     <title>Contact - Merijn Vervoorn</title>
     <link rel="icon" type="image/x-icon" href="/static/logo/favi.png">
-    <meta name="description" content="Merijn Vervoorn is a student at the UvA. He is always looking for new things to learn and likes to share his knowledge with others. He enjoys making videos and podcasts and is always willing to help others.">
+    <meta name="description" content="Merijn Vervoorn is een student aan de UvA. Hij is altijd op zoek naar nieuwe dingen om te leren en deelt zijn kennis graag met anderen. Hij maakt graag video's en podcasts en is ook altijd bereid om anderen te helpen.">
     <meta name="keywords" content="Merijn, Vervoorn, Merijn Vervoorn">
     <meta name="author" content="Merijn Vervoorn">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="alternate" hreflang="nl" href="https://merijnvervoorn.com/contact" />
+    <link rel="alternate" hreflang="en" href="https://merijnvervoorn.com/en/contact" />
 
     <!-- Styles -->
-    <!-- CSS --><link rel="stylesheet" href="/static/styles.css">
+    <!-- CSS --><link rel="stylesheet" href="static/styles.css">
     <!-- Bootstrap --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Font Awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Fonts via Google -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.g/static.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <!-- Animate --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- splitting -->
@@ -30,11 +30,14 @@
       <script src="/static/image-optimizer.js"></script>
   </head>
 
-      <body class="body">
+  <body class="body">
     <div class="topnav">
       <header class="header d-flex flex-wrap py-2 mb-4">
         <a draggable="false" href="/" class="unselectable d-flex me-md-auto topnav-image">
-          <img draggable="false" src="/static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34">
+          <picture>
+            <source srcset="/static/logo/optimized/logo-zen-200.webp" type="image/webp">
+            <img draggable="false" src="static/logo/logo-zen.png" class="topnav-image unselectable" width="50" height="34" loading="eager">
+          </picture>
         </a>
         <div class="hamburger" id="hamburger">
           <span></span>
@@ -42,11 +45,11 @@
           <span></span>
         </div>
         <ul class="nav nav-pills" id="nav-menu">
-          <li class="nav-item"><a href="/en" class="nav-link nav-animate" data-splitting>Home</a></li>
-          <li class="nav-item"><a href="/en/about" class="nav-link nav-animate" data-splitting>About</a></li>
-          <li class="nav-item"><a href="/en/projects" class="nav-link nav-animate" data-splitting>Projects</a></li>
-          <li class="nav-item"><a href="/en/contact" class="nav-link nav-link-active">Contact</a></li>
-          <li class="nav-item"><a href="/contact" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
+          <li class="nav-item"><a href="/" class="nav-link nav-animate" data-splitting>Home</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link nav-animate" data-splitting>Over</a></li>
+          <li class="nav-item"><a href="/projects" class="nav-link nav-animate" data-splitting>Projecten</a></li>
+          <li class="nav-item"><a href="/contact" class="nav-link nav-link-active">Contact</a></li>
+          <li class="nav-item"><a href="/en/contact" class="unselectable fa fa-solid fa-language" style="font-size: 2rem;"></a></li>
         </ul>
       </header>
     </div>
@@ -57,9 +60,9 @@
             <div class="row justify-content-center g-5 py-5">
               <div class="col-lg-4">
                 <div class="d-flex align-items-center justify-content-center">
-                  <h2 class="contact-title heading">Contact me</h2>
+                  <h2 class="contact-title heading">Neem contact met me op</h2>
                 </div>
-                <p class="contact-text">Want to ask me a question, make a comment, tell me a story or just exchange information? Send me a message using this contact form. Or connect with me via my social media accounts.</p>
+                <p class="contact-text">Wil je me een vraag stellen, een opmerking maken, een verhaal vertellen of gewoon gegevens uitwisselen? Stuur me een bericht via dit contactformulier. Of verbind met me via mijn sociale media accounts.</p>
                 <div style="text-align: center;">
                   <a draggable="false" (dragstart)="false;" href="https://www.linkedin.com/in/merijnvervoorn/" target="_blank" class="fa fa-linkedin unselectable" style="font-size: 3rem;"></a>
                   <a draggable="false" (dragstart)="false;" href="https://www.youtube.com/@merijnvervoorn" target="_blank" class="fa fa-youtube unselectable" style="font-size: 3rem;"></a>
@@ -68,48 +71,25 @@
               </div>
               <div class="contact-form col-lg-8">
                 <div class="d-flex">
-                  <div class="flex-grow-1 me-lg-4 w-100">
-                    <form action="https://formsubmit.co/merijnvervoorn@outlook.com" method="POST">
-                      
-                      <input type="text" name="_honey" style="display:none">
-                      
-                      <input type="hidden" name="_next" value="https://merijnvervoorn.com/en/contact-submitted">
-                      
-                      <input type="hidden" name="_autoresponse" value="Thank you for your message, I will respond as soon as possible.">
-
-                      <div class="mb-3">
-                        <label for="name" class="form-label font-weight-bold">Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control p-2" id="name" name="name" placeholder="Your name" required>
-                      </div>
-                      
-                      <div class="mb-3">
-                        <label for="email" class="form-label font-weight-bold">Email address <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control p-2" id="email" name="email" placeholder="name@example.com" required>
-                      </div>
-                      
-                      <div class="mb-4">
-                        <label for="message" class="form-label font-weight-bold">Message</label>
-                        <textarea class="form-control p-2" id="message" name="message" rows="6" placeholder="Your message here..."></textarea>
-                      </div>
-                      
-                      <button type="submit" class="btn btn-primary w-100 p-2" style="background-color: var(--zen-indigo); border-radius: 8px; border-color: var(--zen-indigo);">Send Message</button>
-                    </form>
+                    <div class="thank-you-message">
+                      <h3>Bedankt voor je bericht!</h3>
+                      <p>Ik zal zo snel mogelijk contact met je opnemen.</p>                    
                   </div>
-                  <img src="/static/image/emoji-suit.png" class="d-block ms-3" alt="Contact" height="650" loading="lazy">
+                  <picture><source srcset="/static/image/optimized/emoji-suit-800.webp" type="image/webp"><img src="/static/image/emoji-suit.png" class="d-block ms-3" alt="Contact" height="650" loading="lazy"></picture>
                 </div>
               </div>
             </div>
           </div>
         </div>
         
-              <div class="floating-shape" style="top: 40%; left: 5%;">
-        <img src="/static/shape/bl-sq.png" width="80" alt="">
+      <div class="floating-shape" style="top: 40%; left: 5%;">
+        <picture><source srcset="/static/shape/optimized/bl-sq-200.webp" type="image/webp"><img src="/static/shape/bl-sq.png" width="80" alt="" loading="lazy"></picture>
       </div>              
       <div class="floating-shape" style="top: 43%; left: 13%;">
-        <img src="/static/shape/yo-cir.png" width="80" alt="">
+        <img src="/static/shape/yo-cir.png" width="80" alt="" loading="lazy"></picture>
       </div>
       <div class="floating-shape" style="top: 48%; left: 7%;">
-        <img src="/static/shape/pc-tri.png" width="80" alt="">
+        <img src="/static/shape/pc-tri.png" width="80" alt="" loading="lazy"></picture>
       </div>
 
         <div class="footer">
@@ -119,14 +99,14 @@
             </div>
             <div class="col">
               <p class="footer-head heading">Merijn Vervoorn</p>
-              <p class="footer-text">I am Merijn, a student at the UvA. I am always looking for new things to learn and love to share my knowledge with others. I enjoy making videos and podcasts and am always willing to help others.</p>
+              <p class="footer-text">Ik ben Merijn, een student aan de UvA. Ik ben altijd op zoek naar nieuwe dingen om te leren en deel mijn kennis graag met anderen. Ik maak graag video's en podcasts en ben ook altijd bereid om anderen te helpen.</p>
             </div>
             <div class="col">
               <p class="footer-head heading">Browse</p>
               <ul class="footer-text">
-                <li><a href="/en/index" class="footer-link">Home</a></li>
-                <li><a href="/en/about" class="footer-link">About</a></li>
-                <li><a href="/en/contact" class="footer-link">Contact</a></li>
+                <li><a href="/" class="footer-link">Home</a></li>
+                <li><a href="/about" class="footer-link">Over</a></li>
+                <li><a href="/contact" class="footer-link">Contact</a></li>
               </ul>
             </div>
             <div class="col">
@@ -140,9 +120,9 @@
             </div>
           </div>
         </div>
-      </div>
-        <script src="/script.js"></script> 
-        <script>
+     </div>
+     <script src="/script.js"></script> 
+    <script>
       // Hamburger menu JS
       const hamburger = document.getElementById('hamburger');
       const navMenu = document.getElementById('nav-menu');
@@ -151,5 +131,6 @@
         hamburger.classList.toggle('active');
       });
     </script>
+
       </body>
     </html>
