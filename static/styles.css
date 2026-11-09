@@ -140,7 +140,7 @@ html {
   color: var(--text);
   background-color: var(--bg);
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: visible;
   position: relative;
   line-height: 1.75;
 }
@@ -323,6 +323,28 @@ p {
   transition: transform ease 0.2s;
 }
 
+/* Orange button */
+.tertiary-button {
+  padding: 0.5em 2em;
+  background-color: var(--accent);
+  color: var(--text);
+  border-radius: var(--border05);
+  border-style: solid;
+  border: none;
+  display: inline-block;
+  font-size: var(--p);
+  z-index: 1;
+  cursor: pointer;
+  transition: transform ease 0.2s, background-color ease 0.2s;
+  white-space: nowrap;
+}
+
+.tertiary-button:hover {
+  background-color: var(--accent75);
+  transform: translate(0, -3px);
+  transition: transform ease 0.2s;
+}
+
 /* Topnav */
 .topnav {
     overflow: hidden;
@@ -500,47 +522,6 @@ p {
   background-color: var(--primary5) !important;
   padding: 1rem;
   border-style: hidden !important;
-}
-
-/* Newsletter */
-.newsletter {
-  text-align: center;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.919), rgba(255, 255, 255, 0.684), rgba(255, 255, 255, 0)), 
-                    url("image/mrt-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: pan-background 50s ease-in-out infinite;
-}
-
-/* WebP version for modern browsers */
-.webp .newsletter {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.919), rgba(255, 255, 255, 0.684), rgba(255, 255, 255, 0)), 
-                    url("image/optimized/mrt-bg-1200.webp");
-}
-
-@keyframes pan-background {
-  0% { background-position: 0% 0%; }
-  50% { background-position: 0% 100%; }
-  100% { background-position: 0% 0%; }
-}
-
-.newsletter-title {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: var(--h3);
-  font-style: italic;
-  text-decoration: underline;
-  padding-bottom: 0.5rem;
-  color: var(--git-black);
-}
-
-.newsletter-text {
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.newsletter-logo {
-  flex-basis: 30%;
 }
 
 /* Contact */
