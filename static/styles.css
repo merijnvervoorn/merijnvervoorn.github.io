@@ -535,6 +535,163 @@ p {
   padding-bottom: 0.5rem;
 }
 
+
+/* Hoofd Wrapper - Zachte achtergrond zoals de nieuwsbrief zelf */
+.mrt-newsletter-wrapper {
+  background-color: #FDFBF7; /* Warme off-white/beige tint */
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Linkerkolom Typografie */
+.mrt-logo {
+  width: 90px;
+  height: auto;
+}
+
+.mrt-title {
+  font-family: 'Playfair Display', serif; /* Of een ander schreeflettertype dat je mooi vindt voor die redactionele look */
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.2;
+}
+
+.mrt-desc {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Rechterkolom Formulier Kaart */
+.mrt-form-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.mrt-form-title {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Het Pil-vormige formulier */
+.mrt-input-group {
+  display: flex;
+  background: #fff;
+  border-radius: 50px;
+  padding: 6px;
+  border: 2px solid #eaeaea;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mrt-input-group:focus-within {
+  border-color: var(--primary, #5a32fa);
+  box-shadow: 0 0 0 4px rgba(90, 50, 250, 0.1);
+}
+
+.mrt-input-group input {
+  border: none;
+  background: transparent;
+  padding: 12px 20px;
+  flex-grow: 1;
+  font-size: 1rem;
+  outline: none;
+  min-width: 0; /* Voorkomt overflow op kleine schermen */
+}
+
+.mrt-input-group button {
+  background-color: var(--accent, #f39c12); /* Oranje accentkleur */
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.mrt-input-group button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.mrt-archive-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary, #5a32fa);
+  text-decoration: none;
+}
+
+.mrt-archive-link:hover {
+  text-decoration: underline;
+}
+
+/* Geometrische achtergrond decoratie */
+.mrt-shape {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.mrt-shape-circle {
+  width: 120px;
+  height: 120px;
+  background-color: var(--primary, #5a32fa);
+  border-radius: 50%;
+  top: -30px;
+  right: -30px;
+}
+
+.mrt-shape-triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 104px solid var(--accent, #f39c12);
+  bottom: 20px;
+  left: -40px;
+  transform: rotate(20deg);
+}
+
+/* Responsiviteit voor mobiel */
+@media (max-width: 768px) {
+  .mrt-title {
+    font-size: 1.8rem;
+  }
+  
+  .mrt-shape {
+    opacity: 0.2; /* Minder aanwezig op kleine schermen */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Op hele smalle schermen breken we de pilvorm in tweeën */
+  .mrt-input-group {
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+  }
+  
+  .mrt-input-group input {
+    background: #fff;
+    border: 2px solid #eaeaea;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .mrt-input-group button {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
 /* About Page */
 
       .story-section {

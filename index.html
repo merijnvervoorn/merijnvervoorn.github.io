@@ -118,44 +118,60 @@
         </picture>
       </div>
 
-<!-- Merijns Relatieve Tijdsaanduiding Sectie -->
-    <section class="px-4 py-5" id="newsletter">
-      <div class="container col-xxl-8">
-        <div class="row justify-content-center">
-          <div class="col-lg-9 text-center">
-            <h2 class="about-title mb-3">Nieuwsbrief</h2>
-            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.7;">
-              Via mijn nieuwsbrief, Merijns Relatieve Tijdsaanduiding, ontvang je updates over wat er in mijn leven gebeurt, wat er in mijn hoofd is blijven hangen, en aanraders voor boeken, films, musea en meer.
-            </p>
+<section class="px-4 py-5 my-5" id="newsletter">
+  <div class="container col-xxl-10">
+    <div class="mrt-newsletter-wrapper position-relative overflow-hidden p-4 p-md-5">
+      
+      <!-- Speelse achtergrond elementen (geïnspireerd op je hero sectie) -->
+      <div class="mrt-shape mrt-shape-circle"></div>
+      <div class="mrt-shape mrt-shape-triangle"></div>
 
-            <div class="p-4 p-md-5" id="personal-signup-container" style="background-color: var(--accent10) !important; border-radius: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
-              <img src="static/logo/logo-mrt.png" style="width: 100px; display: block; margin: 0 auto 20px auto;" alt="Merijns Relatieve Tijdsaanduiding Logo">
-              <p class="mb-3 text-weight-bold" style="font-family: 'Unbounded', sans-serif; font-size: 1.05rem; text-align: center;">Meld je aan en ontvang Tijdsaanduiding rechtstreeks in je inbox.</p>
+      <div class="row align-items-center position-relative z-1">
+        
+        <!-- Linkerkolom: Tekst & Branding -->
+        <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+          <img src="static/logo/logo-mrt.png" alt="Logo" class="mrt-logo mb-4">
+          <h2 class="mrt-title mb-3">Merijns Relatieve Tijdsaanduiding</h2>
+          <p class="mrt-desc">
+            Updates over wat er in mijn leven gebeurt, wat er in mijn hoofd is blijven hangen, en aanraders voor boeken, films, musea en meer. Mijn alternatief voor social media.
+          </p>
+        </div>
+
+        <!-- Rechterkolom: Actie & Formulier -->
+        <div class="col-lg-6">
+          <div class="mrt-form-card p-4 p-sm-5">
+            <h4 class="mrt-form-title mb-4">Ontvang de volgende editie direct in je inbox.</h4>
+            
+            <form id="personal-signup-form" novalidate>
+              <input type="hidden" name="data[Timestamp]" id="personal-timestamp-field">
               
-              <form id="personal-signup-form" class="d-flex gap-2 justify-content-center flex-wrap" novalidate>
-                <input type="hidden" name="data[Timestamp]" id="personal-timestamp-field">
+              <!-- Modern geïntegreerd input veld -->
+              <div class="mrt-input-group mb-3">
                 <input 
                   type="email" 
                   name="data[Je E-mail]" 
                   id="personal-email-field" 
                   placeholder="jouw@emailadres.nl" 
                   required 
-                  class="form-control p-3" 
-                  style="max-width: 350px; border-radius: 10px; border: 1px solid var(--primary);"
                 >
-                <button type="submit" id="personal-signup-button" class="tertiary-button" style="border-radius: 10px; padding: 0.75rem 1.5rem;">Inschrijven</button>
-              </form>
+                <button type="submit" id="personal-signup-button">
+                  Inschrijven
+                </button>
+              </div>
+            </form>
 
-              <p id="personal-signup-status" class="mt-3 mb-0" style="display: none; font-size: 0.95rem;"></p>
-            </div>
-
-            <div class="mt-3">
-              <a href="https://tijdsaanduiding.merijn.cc" target="_blank" class="footer-link" style="font-weight: 500; font-size: 0.95rem;">Bekijk ook het archief en eerdere edities &rarr;</a>
-            </div>
+            <p id="personal-signup-status" class="mt-2 mb-3" style="display: none; font-size: 0.9rem;"></p>
+            
+            <a href="https://tijdsaanduiding.merijn.cc" target="_blank" class="mrt-archive-link">
+              Bekijk het archief en eerdere edities &rarr;
+            </a>
           </div>
         </div>
+
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Werkende SheetDB inschrijvingsscript -->
     <script>
